@@ -1,0 +1,148 @@
+
+
+================================================================
+== Vitis HLS Report for 'detectFaces_Pipeline_VITIS_LOOP_2855_2'
+================================================================
+* Date:           Wed Sep  4 13:52:53 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        face_detection
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a50ti-csg324-1L
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.898 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      102|      102|  1.020 us|  1.020 us|  102|  102|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_2855_2  |      100|      100|         1|          1|          1|   100|       yes|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF  |  LUT  | URAM|
++-----------------+---------+-----+-------+-------+-----+
+|DSP              |        -|    -|      -|      -|    -|
+|Expression       |        -|    -|      0|     28|    -|
+|FIFO             |        -|    -|      -|      -|    -|
+|Instance         |        -|    -|      -|      -|    -|
+|Memory           |        -|    -|      -|      -|    -|
+|Multiplexer      |        -|    -|      -|     27|    -|
+|Register         |        -|    -|      9|      -|    -|
++-----------------+---------+-----+-------+-------+-----+
+|Total            |        0|    0|      9|     55|    0|
++-----------------+---------+-----+-------+-------+-----+
+|Available        |      150|  120|  65200|  32600|    0|
++-----------------+---------+-----+-------+-------+-----+
+|Utilization (%)  |        0|    0|     ~0|     ~0|    0|
++-----------------+---------+-----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |add_ln2855_fu_112_p2   |         +|   0|  0|  14|           7|           1|
+    |icmp_ln2855_fu_106_p2  |      icmp|   0|  0|  14|           7|           6|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0|  28|          14|           7|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |ap_done_int           |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_2  |   9|          2|    7|         14|
+    |i_fu_38               |   9|          2|    7|         14|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  27|          6|   15|         30|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |i_fu_38      |  7|   0|    7|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  9|   0|    9|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+----------------------------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |              Source Object             |    C Type    |
++-------------------+-----+-----+------------+----------------------------------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|  detectFaces_Pipeline_VITIS_LOOP_2855_2|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|  detectFaces_Pipeline_VITIS_LOOP_2855_2|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|  detectFaces_Pipeline_VITIS_LOOP_2855_2|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|  detectFaces_Pipeline_VITIS_LOOP_2855_2|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|  detectFaces_Pipeline_VITIS_LOOP_2855_2|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|  detectFaces_Pipeline_VITIS_LOOP_2855_2|  return value|
+|result_x_address0  |  out|    7|   ap_memory|                                result_x|         array|
+|result_x_ce0       |  out|    1|   ap_memory|                                result_x|         array|
+|result_x_we0       |  out|    1|   ap_memory|                                result_x|         array|
+|result_x_d0        |  out|   32|   ap_memory|                                result_x|         array|
+|result_y_address0  |  out|    7|   ap_memory|                                result_y|         array|
+|result_y_ce0       |  out|    1|   ap_memory|                                result_y|         array|
+|result_y_we0       |  out|    1|   ap_memory|                                result_y|         array|
+|result_y_d0        |  out|   32|   ap_memory|                                result_y|         array|
+|result_w_address0  |  out|    7|   ap_memory|                                result_w|         array|
+|result_w_ce0       |  out|    1|   ap_memory|                                result_w|         array|
+|result_w_we0       |  out|    1|   ap_memory|                                result_w|         array|
+|result_w_d0        |  out|   32|   ap_memory|                                result_w|         array|
+|result_h_address0  |  out|    7|   ap_memory|                                result_h|         array|
+|result_h_ce0       |  out|    1|   ap_memory|                                result_h|         array|
+|result_h_we0       |  out|    1|   ap_memory|                                result_h|         array|
+|result_h_d0        |  out|   32|   ap_memory|                                result_h|         array|
++-------------------+-----+-----+------------+----------------------------------------+--------------+
+

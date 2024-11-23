@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="haar.cpp" path="/home/jam/Downloads/FaceDetection/Face_Detection/source/haar.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="image.cpp" path="/home/jam/Downloads/FaceDetection/Face_Detection/source/image.cpp"/>
+    <originFiles name="main.cpp" path="/home/jam/Downloads/FaceDetection/Face_Detection/source/main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

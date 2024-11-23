@@ -1,0 +1,149 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 29,174       | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 60,451       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 27,329       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 27,362       | user inline pragmas are applied                                                        |
+|               | (4) simplification          | 25,408       | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 27,786       | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 25,825       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 25,825       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 25,817       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 23,641       | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 22,012       | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 22,010       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 22,010       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 22,010       | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                | 22,022       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 22,094       | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++-----------------------+---------------+-----------------+---------------+--------------+-------------+---------------+
+| Function              | Location      | Compile/Link    | Unroll/Inline | Array/Struct | Performance | HW Transforms |
++-----------------------+---------------+-----------------+---------------+--------------+-------------+---------------+
+| + detectFaces         | haar.cpp:2822 | 29,174          | 25,408        | 23,641       | 22,010      | 22,094        |
+|    myRound            | haar.cpp:2813 | 4,214 (2 calls) |               |              |             |               |
+|    imageScaler        | haar.cpp:3395 |    42           |               |              |             |               |
+|  + processImage       | haar.cpp:2931 | 20,541          | 25,179        | 23,417       | 21,790      | 21,859        |
+|   + cascadeClassifier | haar.cpp:3103 | 14,331          |               |              |             |               |
+|      int_sqrt         | haar.cpp:3429 |   165           |               |              |             |               |
+|      classifier0      | haar.cpp:1050 |   126           |               |              |             |               |
+|      classifier1      | haar.cpp:1083 |   126           |               |              |             |               |
+|      classifier2      | haar.cpp:1116 |   126           |               |              |             |               |
+|      classifier3      | haar.cpp:1149 |   126           |               |              |             |               |
+|      classifier4      | haar.cpp:1182 |   126           |               |              |             |               |
+|      classifier5      | haar.cpp:1215 |   126           |               |              |             |               |
+|      classifier6      | haar.cpp:1248 |   126           |               |              |             |               |
+|      classifier7      | haar.cpp:1281 |   126           |               |              |             |               |
+|      classifier8      | haar.cpp:1314 |   126           |               |              |             |               |
+|      classifier9      | haar.cpp:1347 |   126           |               |              |             |               |
+|      classifier10     | haar.cpp:1380 |   126           |               |              |             |               |
+|      classifier11     | haar.cpp:1413 |   126           |               |              |             |               |
+|      classifier12     | haar.cpp:1446 |   126           |               |              |             |               |
+|      classifier13     | haar.cpp:1479 |   126           |               |              |             |               |
+|      classifier14     | haar.cpp:1512 |   126           |               |              |             |               |
+|      classifier15     | haar.cpp:1545 |   126           |               |              |             |               |
+|      classifier16     | haar.cpp:1578 |   126           |               |              |             |               |
+|      classifier17     | haar.cpp:1611 |   126           |               |              |             |               |
+|      classifier18     | haar.cpp:1644 |   126           |               |              |             |               |
+|      classifier19     | haar.cpp:1677 |   126           |               |              |             |               |
+|      classifier20     | haar.cpp:1710 |   126           |               |              |             |               |
+|      classifier21     | haar.cpp:1743 |   126           |               |              |             |               |
+|      classifier22     | haar.cpp:1776 |   126           |               |              |             |               |
+|      classifier23     | haar.cpp:1809 |   126           |               |              |             |               |
+|      classifier24     | haar.cpp:1842 |   126           |               |              |             |               |
+|      classifier25     | haar.cpp:1875 |   126           |               |              |             |               |
+|      classifier26     | haar.cpp:1908 |   126           |               |              |             |               |
+|      classifier27     | haar.cpp:1941 |   126           |               |              |             |               |
+|      classifier28     | haar.cpp:1974 |   126           |               |              |             |               |
+|      classifier29     | haar.cpp:2007 |   126           |               |              |             |               |
+|      classifier30     | haar.cpp:2040 |   126           |               |              |             |               |
+|      classifier31     | haar.cpp:2073 |   126           |               |              |             |               |
+|      classifier32     | haar.cpp:2106 |   126           |               |              |             |               |
+|      classifier33     | haar.cpp:2139 |   126           |               |              |             |               |
+|      classifier34     | haar.cpp:2172 |   126           |               |              |             |               |
+|      classifier35     | haar.cpp:2205 |   166           |               |              |             |               |
+|      classifier36     | haar.cpp:2238 |   126           |               |              |             |               |
+|      classifier37     | haar.cpp:2271 |   126           |               |              |             |               |
+|      classifier38     | haar.cpp:2304 |   126           |               |              |             |               |
+|      classifier39     | haar.cpp:2337 |   126           |               |              |             |               |
+|      classifier40     | haar.cpp:2370 |   126           |               |              |             |               |
+|      classifier41     | haar.cpp:2403 |   126           |               |              |             |               |
+|      classifier42     | haar.cpp:2436 |   126           |               |              |             |               |
+|      classifier43     | haar.cpp:2469 |   126           |               |              |             |               |
+|      classifier44     | haar.cpp:2502 |   126           |               |              |             |               |
+|      classifier45     | haar.cpp:2535 |   126           |               |              |             |               |
+|      classifier46     | haar.cpp:2568 |   126           |               |              |             |               |
+|      classifier47     | haar.cpp:2601 |   126           |               |              |             |               |
+|      classifier48     | haar.cpp:2634 |   166           |               |              |             |               |
+|      classifier49     | haar.cpp:2667 |   126           |               |              |             |               |
+|      classifier50     | haar.cpp:2700 |   126           |               |              |             |               |
+|      classifier51     | haar.cpp:2733 |   126           |               |              |             |               |
+|    + get_all_data     | haar.cpp:946  | 4,388           |               |              |             |               |
+|       get_bank        | haar.cpp:30   |    28           |               |              |             |               |
+|       get_offset      | haar.cpp:35   |    28           |               |              |             |               |
+|       get_data0       | haar.cpp:40   |   120           |               |              |             |               |
+|       get_data1       | haar.cpp:74   |   132           |               |              |             |               |
+|       get_data2       | haar.cpp:110  |   144           |               |              |             |               |
+|       get_data3       | haar.cpp:149  |   128           |               |              |             |               |
+|       get_data4       | haar.cpp:184  |   120           |               |              |             |               |
+|       get_data5       | haar.cpp:217  |   132           |               |              |             |               |
+|       get_data6       | haar.cpp:253  |   124           |               |              |             |               |
+|       get_data7       | haar.cpp:286  |   124           |               |              |             |               |
+|       get_data8       | haar.cpp:320  |    32           |               |              |             |               |
+|       get_data9       | haar.cpp:331  |   136           |               |              |             |               |
+|       get_data10      | haar.cpp:368  |   108           |               |              |             |               |
+|       get_data11      | haar.cpp:398  |   136           |               |              |             |               |
+|       get_data12      | haar.cpp:435  |   128           |               |              |             |               |
+|       get_data13      | haar.cpp:470  |   120           |               |              |             |               |
+|       get_data14      | haar.cpp:503  |   120           |               |              |             |               |
+|       get_data15      | haar.cpp:536  |   128           |               |              |             |               |
+|       get_data16      | haar.cpp:571  |   120           |               |              |             |               |
+|       get_data17      | haar.cpp:604  |   120           |               |              |             |               |
+|       get_data18      | haar.cpp:639  |   128           |               |              |             |               |
+|       get_data19      | haar.cpp:673  |   120           |               |              |             |               |
+|       get_data20      | haar.cpp:706  |   128           |               |              |             |               |
+|       get_data21      | haar.cpp:741  |   104           |               |              |             |               |
+|       get_data22      | haar.cpp:770  |   124           |               |              |             |               |
+|       get_data23      | haar.cpp:804  |   108           |               |              |             |               |
+|       get_data24      | haar.cpp:834  |   112           |               |              |             |               |
+|       get_data25      | haar.cpp:865  |   108           |               |              |             |               |
+|       get_data26      | haar.cpp:895  |    96           |               |              |             |               |
+|       get_data27      | haar.cpp:922  |    84           |               |              |             |               |
+|      weakClassifier   | haar.cpp:3361 | 1,170           |               |              |             |               |
+|     myRound           | haar.cpp:2813 | 4,214 (2 calls) |               |              |             |               |
+|     get_data1         | haar.cpp:74   |                 |   108         |    82        |    56       |    56         |
+|     get_data2         | haar.cpp:110  |                 |   120         |    91        |    62       |    62         |
+|     get_data3         | haar.cpp:149  |                 |   104         |    79        |    54       |    54         |
+|     get_data5         | haar.cpp:217  |                 |   108         |    82        |    56       |    56         |
+|     get_data9         | haar.cpp:331  |                 |   112         |    85        |    58       |    58         |
+|     get_data11        | haar.cpp:398  |                 |   112         |    85        |    58       |    58         |
+|     get_data12        | haar.cpp:435  |                 |   104         |    79        |    54       |    54         |
+|     get_data15        | haar.cpp:536  |                 |   104         |    79        |    54       |    54         |
+|     get_data18        | haar.cpp:639  |                 |   104         |    79        |    54       |    54         |
+|     get_data20        | haar.cpp:706  |                 |   104         |    79        |    54       |    54         |
++-----------------------+---------------+-----------------+---------------+--------------+-------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

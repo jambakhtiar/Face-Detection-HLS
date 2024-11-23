@@ -1,0 +1,1492 @@
+{
+  "0": {
+    "basicblocks": 29,
+    "calls": "3 3 27 27 7 10",
+    "file": "haar.cpp",
+    "fileloc": 2822,
+    "instructions": 189,
+    "loads": {
+      "G": 4,
+      "L": 10,
+      "T": 1
+    },
+    "name": "detectFaces",
+    "stores": {
+      "G": 2,
+      "L": 8,
+      "T": 11
+    },
+    "total_instructions": 29174
+  },
+  "1": {
+    "basicblocks": 56,
+    "calls": "61 58 56 46 41 43 32 34 37 17 20 23 11 13 6 99 97 103 101 89 93 91 88 87 85 75 73 81 78 65",
+    "file": "haar.cpp",
+    "fileloc": 946,
+    "instructions": 574,
+    "loads": {
+      "L": 46
+    },
+    "name": "get_all_data",
+    "stores": {
+      "L": 46
+    },
+    "total_instructions": 4388
+  },
+  "10": {
+    "basicblocks": 86,
+    "calls": "67 3 3",
+    "file": "haar.cpp",
+    "fileloc": 2931,
+    "instructions": 608,
+    "loads": {
+      "G": 2,
+      "L": 40
+    },
+    "name": "processImage",
+    "stores": {
+      "G": 20,
+      "L": 15
+    },
+    "total_instructions": 20541
+  },
+  "100": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2040,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier30",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "101": {
+    "basicblocks": 26,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 571,
+    "instructions": 103,
+    "loads": {
+      "L": 24
+    },
+    "name": "get_data16",
+    "stores": {
+      "L": 24
+    },
+    "total_instructions": 120
+  },
+  "102": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2007,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier29",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "103": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 536,
+    "instructions": 111,
+    "loads": {
+      "L": 26
+    },
+    "name": "get_data15",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 128
+  },
+  "11": {
+    "basicblocks": 23,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 368,
+    "instructions": 91,
+    "loads": {
+      "L": 21
+    },
+    "name": "get_data10",
+    "stores": {
+      "L": 21
+    },
+    "total_instructions": 108
+  },
+  "12": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1677,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier19",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "13": {
+    "basicblocks": 30,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 398,
+    "instructions": 119,
+    "loads": {
+      "L": 28
+    },
+    "name": "get_data11",
+    "stores": {
+      "L": 28
+    },
+    "total_instructions": 136
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 283,
+    "instructions": 55,
+    "loads": {
+      "L": 1
+    },
+    "name": "fp_struct",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 311
+  },
+  "15": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2634,
+    "instructions": 106,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier48",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 166
+  },
+  "16": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1842,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier24",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "17": {
+    "basicblocks": 27,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 286,
+    "instructions": 107,
+    "loads": {
+      "L": 25
+    },
+    "name": "get_data7",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 124
+  },
+  "18": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2667,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier49",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "19": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1875,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier25",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1776,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier22",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "20": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 320,
+    "instructions": 15,
+    "loads": {
+      "L": 2
+    },
+    "name": "get_data8",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 32
+  },
+  "21": {
+    "basicblocks": 16,
+    "calls": "14 39 29 29 69 69",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 12,
+    "instructions": 133,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_cast_IEEE754<int, AP_TRN_ZERO, float>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2090
+  },
+  "22": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2700,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier50",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "23": {
+    "basicblocks": 30,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 331,
+    "instructions": 119,
+    "loads": {
+      "L": 28
+    },
+    "name": "get_data9",
+    "stores": {
+      "L": 28
+    },
+    "total_instructions": 136
+  },
+  "24": {
+    "basicblocks": 1,
+    "calls": "21",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 116,
+    "instructions": 2,
+    "name": "generic_cast_IEEE754<int, float>",
+    "total_instructions": 2092
+  },
+  "25": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2733,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier51",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "26": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1809,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier23",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "27": {
+    "basicblocks": 1,
+    "calls": "24",
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 51,
+    "instructions": 2,
+    "name": "__hls_fptosi_float_i32",
+    "total_instructions": 2094
+  },
+  "28": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 512,
+    "instructions": 4,
+    "name": "__signbit",
+    "total_instructions": 9
+  },
+  "29": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 316,
+    "instructions": 8,
+    "name": "expv",
+    "total_instructions": 109
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "35",
+    "file": "haar.cpp",
+    "fileloc": 2813,
+    "instructions": 7,
+    "name": "myRound",
+    "total_instructions": 2107
+  },
+  "30": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2535,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier45",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "31": {
+    "basicblocks": 1,
+    "calls": "40",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 116,
+    "instructions": 2,
+    "name": "generic_cast_IEEE754<int, double>",
+    "total_instructions": 2098
+  },
+  "32": {
+    "basicblocks": 26,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 184,
+    "instructions": 103,
+    "loads": {
+      "L": 24
+    },
+    "name": "get_data4",
+    "stores": {
+      "L": 24
+    },
+    "total_instructions": 120
+  },
+  "33": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2568,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier46",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "34": {
+    "basicblocks": 29,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 217,
+    "instructions": 115,
+    "loads": {
+      "L": 27
+    },
+    "name": "get_data5",
+    "stores": {
+      "L": 27
+    },
+    "total_instructions": 132
+  },
+  "35": {
+    "basicblocks": 1,
+    "calls": "31",
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "__hls_fptosi_double_i32",
+    "total_instructions": 2100
+  },
+  "36": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2601,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier47",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "37": {
+    "basicblocks": 27,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 253,
+    "instructions": 107,
+    "loads": {
+      "L": 25
+    },
+    "name": "get_data6",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 124
+  },
+  "38": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 456,
+    "instructions": 55,
+    "loads": {
+      "L": 1
+    },
+    "name": "fp_struct",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 312
+  },
+  "39": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 340,
+    "instructions": 24,
+    "name": "mantissa",
+    "total_instructions": 174
+  },
+  "4": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1710,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier20",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "40": {
+    "basicblocks": 16,
+    "calls": "38 48 51 51 28 28",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 12,
+    "instructions": 133,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_cast_IEEE754<int, AP_TRN_ZERO, double>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2096
+  },
+  "41": {
+    "basicblocks": 32,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 110,
+    "instructions": 127,
+    "loads": {
+      "L": 30
+    },
+    "name": "get_data2",
+    "stores": {
+      "L": 30
+    },
+    "total_instructions": 144
+  },
+  "42": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1380,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier10",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "43": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 149,
+    "instructions": 111,
+    "loads": {
+      "L": 26
+    },
+    "name": "get_data3",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 128
+  },
+  "44": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1413,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier11",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "45": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1050,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier0",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "46": {
+    "basicblocks": 29,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 74,
+    "instructions": 115,
+    "loads": {
+      "L": 27
+    },
+    "name": "get_data1",
+    "stores": {
+      "L": 27
+    },
+    "total_instructions": 132
+  },
+  "47": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1611,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier17",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "48": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 503,
+    "instructions": 24,
+    "name": "mantissa",
+    "total_instructions": 179
+  },
+  "49": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1512,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier14",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "5": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1743,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier21",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "50": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1545,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier15",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "51": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 485,
+    "instructions": 8,
+    "name": "expv",
+    "total_instructions": 109
+  },
+  "52": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2469,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier43",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "53": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1446,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier12",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "54": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2502,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier44",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "55": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1479,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier13",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "56": {
+    "basicblocks": 26,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 40,
+    "instructions": 103,
+    "loads": {
+      "L": 24
+    },
+    "name": "get_data0",
+    "stores": {
+      "L": 24
+    },
+    "total_instructions": 120
+  },
+  "57": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1182,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier4",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "58": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 35,
+    "instructions": 6,
+    "loads": {
+      "G": 1
+    },
+    "name": "get_offset",
+    "total_instructions": 28
+  },
+  "59": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1149,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier3",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "6": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 435,
+    "instructions": 111,
+    "loads": {
+      "L": 26
+    },
+    "name": "get_data12",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 128
+  },
+  "60": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2271,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier37",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "61": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 30,
+    "instructions": 6,
+    "loads": {
+      "G": 1
+    },
+    "name": "get_bank",
+    "total_instructions": 28
+  },
+  "62": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1248,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier6",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "63": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2238,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier36",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "64": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1215,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier5",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "65": {
+    "basicblocks": 17,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 922,
+    "instructions": 67,
+    "loads": {
+      "L": 15
+    },
+    "name": "get_data27",
+    "stores": {
+      "L": 15
+    },
+    "total_instructions": 84
+  },
+  "66": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2205,
+    "instructions": 106,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier35",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 166
+  },
+  "67": {
+    "basicblocks": 53,
+    "calls": "8 45 94 71 59 57 64 62 84 79 76 42 44 53 55 49 50 82 47 9 12 4 5 2 26 16 19 92 90 86 102 100 98 96 70 68 66 63 60 83 80 77 74 72 52 54 30 33 36 15 18 22 25 1 95",
+    "file": "haar.cpp",
+    "fileloc": 3103,
+    "instructions": 872,
+    "loads": {
+      "G": 69,
+      "L": 69
+    },
+    "name": "cascadeClassifier",
+    "stores": {
+      "G": 54,
+      "L": 37
+    },
+    "total_instructions": 14331
+  },
+  "68": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2172,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier34",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "69": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 349,
+    "instructions": 4,
+    "name": "__signbit",
+    "total_instructions": 9
+  },
+  "7": {
+    "basicblocks": 14,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 3395,
+    "instructions": 42,
+    "loads": {
+      "L": 1
+    },
+    "name": "imageScaler",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 42
+  },
+  "70": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2139,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier33",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "71": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1116,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier2",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "72": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2436,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier42",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "73": {
+    "basicblocks": 24,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 834,
+    "instructions": 95,
+    "loads": {
+      "L": 22
+    },
+    "name": "get_data24",
+    "stores": {
+      "L": 22
+    },
+    "total_instructions": 112
+  },
+  "74": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2403,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier41",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "75": {
+    "basicblocks": 23,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 804,
+    "instructions": 91,
+    "loads": {
+      "L": 21
+    },
+    "name": "get_data23",
+    "stores": {
+      "L": 21
+    },
+    "total_instructions": 108
+  },
+  "76": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1347,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier9",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "77": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2370,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier40",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "78": {
+    "basicblocks": 20,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 895,
+    "instructions": 79,
+    "loads": {
+      "L": 18
+    },
+    "name": "get_data26",
+    "stores": {
+      "L": 18
+    },
+    "total_instructions": 96
+  },
+  "79": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1314,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier8",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 3429,
+    "instructions": 21,
+    "loads": {
+      "G": 2
+    },
+    "name": "int_sqrt",
+    "total_instructions": 165
+  },
+  "80": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2337,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier39",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "81": {
+    "basicblocks": 23,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 865,
+    "instructions": 91,
+    "loads": {
+      "L": 21
+    },
+    "name": "get_data25",
+    "stores": {
+      "L": 21
+    },
+    "total_instructions": 108
+  },
+  "82": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1578,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier16",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "83": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2304,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier38",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "84": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1281,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier7",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "85": {
+    "basicblocks": 27,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 770,
+    "instructions": 107,
+    "loads": {
+      "L": 25
+    },
+    "name": "get_data22",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 124
+  },
+  "86": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1974,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier28",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "87": {
+    "basicblocks": 22,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 741,
+    "instructions": 87,
+    "loads": {
+      "L": 20
+    },
+    "name": "get_data21",
+    "stores": {
+      "L": 20
+    },
+    "total_instructions": 104
+  },
+  "88": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 706,
+    "instructions": 111,
+    "loads": {
+      "L": 26
+    },
+    "name": "get_data20",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 128
+  },
+  "89": {
+    "basicblocks": 26,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 604,
+    "instructions": 103,
+    "loads": {
+      "L": 24
+    },
+    "name": "get_data17",
+    "stores": {
+      "L": 24
+    },
+    "total_instructions": 120
+  },
+  "9": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1644,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier18",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "90": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1941,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier27",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "91": {
+    "basicblocks": 26,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 673,
+    "instructions": 103,
+    "loads": {
+      "L": 24
+    },
+    "name": "get_data19",
+    "stores": {
+      "L": 24
+    },
+    "total_instructions": 120
+  },
+  "92": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1908,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier26",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "93": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 639,
+    "instructions": 111,
+    "loads": {
+      "L": 26
+    },
+    "name": "get_data18",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 128
+  },
+  "94": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 1083,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier1",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "95": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 3361,
+    "instructions": 129,
+    "loads": {
+      "G": 6
+    },
+    "name": "weakClassifier",
+    "total_instructions": 1170
+  },
+  "96": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2106,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier32",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "97": {
+    "basicblocks": 26,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 503,
+    "instructions": 103,
+    "loads": {
+      "L": 24
+    },
+    "name": "get_data14",
+    "stores": {
+      "L": 24
+    },
+    "total_instructions": 120
+  },
+  "98": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 2073,
+    "instructions": 86,
+    "loads": {
+      "G": 12
+    },
+    "name": "classifier31",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 126
+  },
+  "99": {
+    "basicblocks": 26,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 470,
+    "instructions": 103,
+    "loads": {
+      "L": 24
+    },
+    "name": "get_data13",
+    "stores": {
+      "L": 24
+    },
+    "total_instructions": 120
+  }
+}

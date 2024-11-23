@@ -1,0 +1,72 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'processImage'" level="0">
+<item name = "Date">Wed Sep  4 13:52:01 2024
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">face_detection</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a50ti-csg324-1L</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.280 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_processImage_Pipeline_Initialize2x_fu_10322">processImage_Pipeline_Initialize2x, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x2_fu_10328">processImage_Pipeline_Initialize2x2, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x3_fu_10334">processImage_Pipeline_Initialize2x3, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x4_fu_10340">processImage_Pipeline_Initialize2x4, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x5_fu_10346">processImage_Pipeline_Initialize2x5, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x6_fu_10352">processImage_Pipeline_Initialize2x6, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x7_fu_10358">processImage_Pipeline_Initialize2x7, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x8_fu_10364">processImage_Pipeline_Initialize2x8, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x9_fu_10370">processImage_Pipeline_Initialize2x9, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x10_fu_10376">processImage_Pipeline_Initialize2x10, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x11_fu_10382">processImage_Pipeline_Initialize2x11, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x12_fu_10388">processImage_Pipeline_Initialize2x12, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x13_fu_10394">processImage_Pipeline_Initialize2x13, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x14_fu_10400">processImage_Pipeline_Initialize2x14, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x15_fu_10406">processImage_Pipeline_Initialize2x15, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x16_fu_10412">processImage_Pipeline_Initialize2x16, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x17_fu_10418">processImage_Pipeline_Initialize2x17, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x18_fu_10424">processImage_Pipeline_Initialize2x18, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x19_fu_10430">processImage_Pipeline_Initialize2x19, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x20_fu_10436">processImage_Pipeline_Initialize2x20, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x21_fu_10442">processImage_Pipeline_Initialize2x21, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x22_fu_10448">processImage_Pipeline_Initialize2x22, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x23_fu_10454">processImage_Pipeline_Initialize2x23, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Initialize2x24_fu_10460">processImage_Pipeline_Initialize2x24, 322, 322, 3.220 us, 3.220 us, 322, 322, no</column>
+<column name="grp_processImage_Pipeline_Filters_fu_10466">processImage_Pipeline_Filters, 26, 228, 0.260 us, 2.280 us, 26, 228, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Pixely_Pixelx">?, ?, 6 ~ 5451, -, -, ?, no</column>
+<column name=" + Stages">0, 5406, 43 ~ 245, -, -, 0 ~ 22, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

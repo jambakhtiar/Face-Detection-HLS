@@ -1,0 +1,158 @@
+{
+  "0": {
+    "basicblocks": 20,
+    "calls": "10",
+    "file": "haar.cpp",
+    "fileloc": 2822,
+    "instructions": 220,
+    "loads": {
+      "G": 2,
+      "L": 5,
+      "T": 1
+    },
+    "name": "detectFaces",
+    "stores": {
+      "G": 2,
+      "L": 2,
+      "T": 11
+    },
+    "total_instructions": 22010
+  },
+  "1": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 435,
+    "instructions": 54,
+    "name": "get_data12",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 54
+  },
+  "10": {
+    "basicblocks": 800,
+    "calls": "2 3 5 6 7 8 1 11 9 4",
+    "file": "haar.cpp",
+    "fileloc": 2931,
+    "instructions": 21230,
+    "loads": {
+      "G": 3785,
+      "L": 36
+    },
+    "name": "processImage",
+    "stores": {
+      "G": 6274,
+      "L": 53
+    },
+    "total_instructions": 21790
+  },
+  "11": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 536,
+    "instructions": 54,
+    "name": "get_data15",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 54
+  },
+  "2": {
+    "basicblocks": 29,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 74,
+    "instructions": 56,
+    "name": "get_data1",
+    "stores": {
+      "L": 27
+    },
+    "total_instructions": 56
+  },
+  "3": {
+    "basicblocks": 32,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 110,
+    "instructions": 62,
+    "name": "get_data2",
+    "stores": {
+      "L": 30
+    },
+    "total_instructions": 62
+  },
+  "4": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 706,
+    "instructions": 54,
+    "name": "get_data20",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 54
+  },
+  "5": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 149,
+    "instructions": 54,
+    "name": "get_data3",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 54
+  },
+  "6": {
+    "basicblocks": 29,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 217,
+    "instructions": 56,
+    "name": "get_data5",
+    "stores": {
+      "L": 27
+    },
+    "total_instructions": 56
+  },
+  "7": {
+    "basicblocks": 30,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 331,
+    "instructions": 58,
+    "name": "get_data9",
+    "stores": {
+      "L": 28
+    },
+    "total_instructions": 58
+  },
+  "8": {
+    "basicblocks": 30,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 398,
+    "instructions": 58,
+    "name": "get_data11",
+    "stores": {
+      "L": 28
+    },
+    "total_instructions": 58
+  },
+  "9": {
+    "basicblocks": 28,
+    "calls": "",
+    "file": "haar.cpp",
+    "fileloc": 639,
+    "instructions": 54,
+    "name": "get_data18",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 54
+  }
+}

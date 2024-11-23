@@ -1,0 +1,912 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a50ti-csg324-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7a50ticsg324-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.38 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.41 seconds; current allocated memory: 311.184 MB.
+INFO: [HLS 200-10] Analyzing design file '../source/haar.cpp' ... 
+WARNING: [HLS 207-5538] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, use 'Stable Pragma' instead (../source/haar.cpp:950:23)
+WARNING: [HLS 207-5292] unused parameter 'pt' (../source/haar.cpp:3105:11)
+WARNING: [HLS 207-5292] unused parameter 'w_id' (../source/haar.cpp:3366:7)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 32.41 seconds. CPU system time: 3.77 seconds. Elapsed time: 36.56 seconds; current allocated memory: 313.703 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 29,174 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 60,451 instructions in the design after the 'Unroll/Inline' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 27,329 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 27,362 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25,408 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 27,786 instructions in the design after the 'Array/Struct' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25,825 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25,825 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 25,817 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 23,641 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 22,012 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 22,010 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 22,010 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 22,010 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 22,022 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 22,094 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'weakClassifier(int, ap_uint<18>*, int, int)' into 'cascadeClassifier(MyPoint, ap_uint<18> (*) [25], ap_uint<26> (*) [2])' (../source/haar.cpp:3344:11)
+INFO: [HLS 214-131] Inlining function 'get_all_data(ap_uint<18>*, ap_uint<10>*, ap_uint<18>*)' into 'cascadeClassifier(MyPoint, ap_uint<18> (*) [25], ap_uint<26> (*) [2])' (../source/haar.cpp:3335:7)
+INFO: [HLS 214-131] Inlining function 'cascadeClassifier(MyPoint, ap_uint<18> (*) [25], ap_uint<26> (*) [2])' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:3077:22)
+INFO: [HLS 214-291] Loop 'COMPUTE_BANK_AND_OFFSET' is marked as complete unroll implied by the pipeline pragma (../source/haar.cpp:963:3)
+INFO: [HLS 214-291] Loop 'ASSIGN_OFFSET_FOR_BANKS' is marked as complete unroll implied by the pipeline pragma (../source/haar.cpp:971:3)
+INFO: [HLS 214-291] Loop 'CHOOSE_DATA' is marked as complete unroll implied by the pipeline pragma (../source/haar.cpp:1021:3)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_3337_1' is marked as complete unroll implied by the pipeline pragma (../source/haar.cpp:3337:26)
+INFO: [HLS 214-186] Unrolling loop 'SetIIu' (../source/haar.cpp:3023:15) in function 'processImage' completely with a factor of 25 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'SetIIj' (../source/haar.cpp:3025:10) in function 'processImage' completely with a factor of 25 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'SetIj' (../source/haar.cpp:3038:14) in function 'processImage' completely with a factor of 49 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'SetIi' (../source/haar.cpp:3040:9) in function 'processImage' completely with a factor of 25 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'Ilast' (../source/haar.cpp:3053:14) in function 'processImage' completely with a factor of 24 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'LineBuf' (../source/haar.cpp:3062:16) in function 'processImage' completely with a factor of 23 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'COPY_LOOP1' (../source/haar.cpp:3154:14) in function 'processImage' completely with a factor of 25 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'COPY_LOOP2' (../source/haar.cpp:3156:14) in function 'processImage' completely with a factor of 25 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'COMPUTE_BANK_AND_OFFSET' (../source/haar.cpp:963:3) in function 'processImage' completely with a factor of 12 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'ASSIGN_OFFSET_FOR_BANKS' (../source/haar.cpp:971:3) in function 'processImage' completely with a factor of 28 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'CHOOSE_DATA' (../source/haar.cpp:1021:3) in function 'processImage' completely with a factor of 12 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_3337_1' (../source/haar.cpp:3337:26) in function 'processImage' completely with a factor of 12 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'Initialize2y' (../source/haar.cpp:3004:3) in function 'processImage' completely with a factor of 24 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'Initialize1i' (../source/haar.cpp:2992:3) in function 'processImage' completely with a factor of 25 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'Initialize1j' (../source/haar.cpp:2995:5) in function 'processImage' completely with a factor of 50 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'Initialize0u' (../source/haar.cpp:2976:3) in function 'processImage' completely with a factor of 25 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-186] Unrolling loop 'Initailize0v' (../source/haar.cpp:2979:5) in function 'processImage' completely with a factor of 25 (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, double>(double, bool)' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, double>(double, bool)' into '__hls_fptosi_double_i32' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_double_i32' into 'myRound(float)' (../source/haar.cpp:2814:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0)
+INFO: [HLS 214-178] Inlining function 'int_sqrt(ap_uint<32>)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier0(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier1(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier2(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier3(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier4(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier5(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier6(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier7(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier8(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier9(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier10(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier11(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier12(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier13(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier14(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier15(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier16(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier17(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier18(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier19(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier20(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier21(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier22(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier23(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier24(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier25(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier26(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier27(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier28(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier29(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier30(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier31(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier32(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier33(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier34(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier35(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier36(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier37(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier38(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier39(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier40(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier41(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier42(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier43(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier44(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier45(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier46(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier47(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier48(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier49(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier50(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'classifier51(ap_uint<18> (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_bank(ap_uint<10>)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_offset(ap_uint<10>)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'myRound(float)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data0(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data4(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data6(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data7(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data8(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data10(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data13(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data14(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data16(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data17(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data19(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data21(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data22(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data23(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data24(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data25(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data26(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'get_data27(int, ap_uint<18>*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)' (../source/haar.cpp:2944:0)
+INFO: [HLS 214-178] Inlining function 'myRound(float)' into 'detectFaces' (../source/haar.cpp:2832:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'detectFaces' (../source/haar.cpp:2832:0)
+INFO: [HLS 214-178] Inlining function 'imageScaler(int, int, unsigned char (*) [320], int, int, unsigned char (*) [320])' into 'detectFaces' (../source/haar.cpp:2832:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ17cascadeClassifier7MyPointPA25_7ap_uintILi18EEPA2_S0_ILi26EEE5coord': Complete partitioning on dimension 1. (../source/haar.cpp:3125:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE3SII': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../source/haar.cpp:2971:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE2SI': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../source/haar.cpp:2967:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE2II': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../source/haar.cpp:2963:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE1I': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (../source/haar.cpp:2959:0)
+INFO: [HLS 214-248] Applying array_partition to 'data_from_banks.i.i': Complete partitioning on dimension 1. (../source/haar.cpp:959:11)
+INFO: [HLS 214-248] Applying array_partition to 'values.i': Complete partitioning on dimension 1. (../source/haar.cpp:3140:11)
+INFO: [HLS 214-248] Applying array_partition to 'addr_list.i': Complete partitioning on dimension 1. (../source/haar.cpp:3144:11)
+INFO: [HLS 214-248] Applying array_partition to 'enable_list.i': Complete partitioning on dimension 1. (../source/haar.cpp:3148:6)
+INFO: [HLS 214-248] Applying array_partition to '_II.i': Complete partitioning on dimension 1. (../source/haar.cpp:3151:11)
+INFO: [HLS 214-248] Applying array_partition to 'L': Complete partitioning on dimension 1. (../source/haar.cpp:2955:17)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (../source/haar.cpp:1025:14)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< Initialize2x> at ../source/haar.cpp:3007:5 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_2850_1> at ../source/haar.cpp:2850:24 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_2922_3> at ../source/haar.cpp:2922:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_2855_2> at ../source/haar.cpp:2855:26 
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 465.29 seconds. CPU system time: 7 seconds. Elapsed time: 473.92 seconds; current allocated memory: 321.484 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 321.484 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 16.87 seconds. CPU system time: 0.11 seconds. Elapsed time: 17.03 seconds; current allocated memory: 348.559 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 4.54 seconds. CPU system time: 0.07 seconds. Elapsed time: 4.63 seconds; current allocated memory: 361.633 MB.
+INFO: [XFORM 203-602] Inlining function 'get_data1' into 'processImage' (../source/haar.cpp:992->../source/haar.cpp:3335->../source/haar.cpp:3077) automatically.
+INFO: [XFORM 203-602] Inlining function 'get_data2' into 'processImage' (../source/haar.cpp:993->../source/haar.cpp:3335->../source/haar.cpp:3077) automatically.
+INFO: [XFORM 203-602] Inlining function 'get_data3' into 'processImage' (../source/haar.cpp:994->../source/haar.cpp:3335->../source/haar.cpp:3077) automatically.
+INFO: [XFORM 203-602] Inlining function 'get_data5' into 'processImage' (../source/haar.cpp:996->../source/haar.cpp:3335->../source/haar.cpp:3077) automatically.
+INFO: [XFORM 203-602] Inlining function 'get_data9' into 'processImage' (../source/haar.cpp:1000->../source/haar.cpp:3335->../source/haar.cpp:3077) automatically.
+INFO: [XFORM 203-602] Inlining function 'get_data11' into 'processImage' (../source/haar.cpp:1002->../source/haar.cpp:3335->../source/haar.cpp:3077) automatically.
+INFO: [XFORM 203-602] Inlining function 'get_data12' into 'processImage' (../source/haar.cpp:1003->../source/haar.cpp:3335->../source/haar.cpp:3077) automatically.
+INFO: [XFORM 203-602] Inlining function 'get_data15' into 'processImage' (../source/haar.cpp:1006->../source/haar.cpp:3335->../source/haar.cpp:3077) automatically.
+INFO: [XFORM 203-602] Inlining function 'get_data18' into 'processImage' (../source/haar.cpp:1009->../source/haar.cpp:3335->../source/haar.cpp:3077) automatically.
+INFO: [XFORM 203-602] Inlining function 'get_data20' into 'processImage' (../source/haar.cpp:1011->../source/haar.cpp:3335->../source/haar.cpp:3077) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../source/haar.cpp:3278:9) to (../source/haar.cpp:974:24) in function 'processImage'... converting 15 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../source/haar.cpp:3151:11) to (../source/haar.cpp:3199:7) in function 'processImage'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'processImage' (../source/haar.cpp:15:5)...77 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 40.1 seconds. CPU system time: 0.1 seconds. Elapsed time: 40.28 seconds; current allocated memory: 413.957 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'imageScalerL1'(../source/haar.cpp:3420:18) and 'imageScalerL1_1'(../source/haar.cpp:3421:22) in function 'detectFaces' into perfectly nested loops.
+WARNING: [HLS 200-960] Cannot flatten loop 'Stages' (../source/haar.cpp:3275:3) in function 'processImage' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'Pixelx' (../source/haar.cpp:3020:13) in function 'processImage' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'Pixely' (../source/haar.cpp:3019:11) in function 'processImage'.
+INFO: [XFORM 203-541] Flattening a loop nest 'imageScalerL1' (../source/haar.cpp:3420:18) in function 'detectFaces'.
+WARNING: [HLS 200-960] Cannot flatten loop 'L1' (../source/haar.cpp:2885:3) in function 'detectFaces' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 38.03 seconds. CPU system time: 0.57 seconds. Elapsed time: 38.63 seconds; current allocated memory: 756.551 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'detectFaces' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'detectFaces_Pipeline_VITIS_LOOP_2850_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_2850_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_2850_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 89.6 seconds. CPU system time: 0.29 seconds. Elapsed time: 89.98 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.09 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'detectFaces_Pipeline_imageScalerL1_imageScalerL1_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'imageScalerL1_imageScalerL1_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop 'imageScalerL1_imageScalerL1_1'
+WARNING: [HLS 200-871] Estimated clock period (8.542 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+WARNING: [HLS 200-1016] The critical path in module 'detectFaces_Pipeline_imageScalerL1_imageScalerL1_1' consists of the following:
+	'store' operation 0 bit ('j_2_write_ln3406', ../source/haar.cpp:3406->../source/haar.cpp:2899) of constant 0 on local variable 'j', ../source/haar.cpp:3406->../source/haar.cpp:2899 [17]  (1.610 ns)
+	'load' operation 9 bit ('j_2_load', ../source/haar.cpp:3421->../source/haar.cpp:2899) on local variable 'j', ../source/haar.cpp:3406->../source/haar.cpp:2899 [25]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln3421', ../source/haar.cpp:3421->../source/haar.cpp:2899) [30]  (2.119 ns)
+	'select' operation 9 bit ('select_ln3408', ../source/haar.cpp:3408->../source/haar.cpp:2899) [31]  (1.084 ns)
+	'add' operation 9 bit ('add_ln3421', ../source/haar.cpp:3421->../source/haar.cpp:2899) [70]  (2.119 ns)
+	'store' operation 0 bit ('j_2_write_ln3406', ../source/haar.cpp:3406->../source/haar.cpp:2899) of variable 'add_ln3421', ../source/haar.cpp:3421->../source/haar.cpp:2899 on local variable 'j', ../source/haar.cpp:3406->../source/haar.cpp:2899 [73]  (1.610 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.37 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.37 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.13 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.13 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.14 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.13 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x15' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.15 seconds; current allocated memory: 763.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 763.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.15 seconds; current allocated memory: 763.695 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 763.695 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 764.008 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 764.008 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x18' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.16 seconds; current allocated memory: 764.320 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 764.320 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x19' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 764.652 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 764.652 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x20' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.17 seconds; current allocated memory: 764.969 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 764.969 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x21' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 765.289 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 765.289 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x22' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 765.531 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 765.531 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x23' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 765.957 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 765.957 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Initialize2x24' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Initialize2x'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Initialize2x'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.18 seconds; current allocated memory: 766.277 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 766.277 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage_Pipeline_Filters' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=addr_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=addr_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=addr_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=addr) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln3315_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln3313) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=final_sum) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln3385) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Filters'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 18, loop 'Filters'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 22.72 seconds. CPU system time: 0.25 seconds. Elapsed time: 23 seconds; current allocated memory: 834.609 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 43.19 seconds. CPU system time: 0.06 seconds. Elapsed time: 43.26 seconds; current allocated memory: 834.609 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'processImage' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 30.15 seconds. CPU system time: 0.28 seconds. Elapsed time: 30.47 seconds; current allocated memory: 905.039 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 445.06 seconds. CPU system time: 0.26 seconds. Elapsed time: 445.65 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'detectFaces_Pipeline_VITIS_LOOP_2922_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_2922_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_2922_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 4.34 seconds. CPU system time: 0.21 seconds. Elapsed time: 4.56 seconds; current allocated memory: 905.039 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.17 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.18 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'detectFaces_Pipeline_VITIS_LOOP_2855_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_2855_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_2855_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 905.039 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'detectFaces' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.38 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.39 seconds; current allocated memory: 905.039 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.38 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.39 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'detectFaces_Pipeline_VITIS_LOOP_2850_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'detectFaces_Pipeline_VITIS_LOOP_2850_1' pipeline 'VITIS_LOOP_2850_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'detectFaces_Pipeline_VITIS_LOOP_2850_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.77 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.79 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'detectFaces_Pipeline_imageScalerL1_imageScalerL1_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'detectFaces_Pipeline_imageScalerL1_imageScalerL1_1' pipeline 'imageScalerL1_imageScalerL1_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_24s_24_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_28s_32_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'detectFaces_Pipeline_imageScalerL1_imageScalerL1_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.28 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.33 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.3 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.19 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.19 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.18 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.19 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x11'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.21 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.23 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x12'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.22 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x13'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.2 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.22 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x14'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x15' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x15'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x16'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.2 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.22 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x17'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 905.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x18' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x18'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.22 seconds; current allocated memory: 905.180 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x19' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x19'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.2 seconds; current allocated memory: 905.977 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x20' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x20'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.21 seconds; current allocated memory: 906.805 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x21' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x21'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 907.590 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x22' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x22'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 908.391 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x23' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x23'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.25 seconds; current allocated memory: 909.277 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Initialize2x24' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Initialize2x24'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 910.059 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage_Pipeline_Filters' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'processImage_Pipeline_Filters' pipeline 'Filters' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_4ns_5ns_5ns_5ns_10_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_5ns_5ns_5ns_5ns_10_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_14ns_20s_32ns_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_14ns_20s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_5ns_5ns_5ns_10_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_16ns_29_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_20s_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_51_32_18_1_1': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_53_32_18_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_55_32_18_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_57_5_18_1_1': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_59_32_18_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage_Pipeline_Filters'.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_alpha2_array_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_tree_thresh_array_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_weights_array0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_weights_array1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_weights_array2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_bank_mapping_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_offset_mapping_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_rectangles_array0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_rectangles_array2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_rectangles_array1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_rectangles_array3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_rectangles_array4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_rectangles_array6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_rectangles_array5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_rectangles_array7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_rectangles_array8_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_rectangles_array10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_rectangles_array9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_rectangles_array11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_Pipeline_Filters_alpha1_array_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 9.38 seconds. CPU system time: 0.23 seconds. Elapsed time: 9.61 seconds; current allocated memory: 961.762 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'processImage' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'processImage' is 32180 from HDL expression: (1'b1 == ap_CS_fsm_state63)
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_8_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_7_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_10ns_25_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_10s_26_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_11s_27_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_12ns_27_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_5ns_20_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_6ns_21_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_6s_22_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_7ns_22_1_1': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_7s_23_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_8ns_23_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_8s_24_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_9ns_24_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_9s_25_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_20s_20s_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_8ns_16_1_1': 25 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32s_64_6_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_6_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'processImage'.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_sqrts_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_stages_array_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detectFaces_processImage_stages_thresh_array_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'detectFaces_processImage_L_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 10.68 seconds. CPU system time: 0.62 seconds. Elapsed time: 11.32 seconds; current allocated memory: 1.044 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'detectFaces_Pipeline_VITIS_LOOP_2922_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'detectFaces_Pipeline_VITIS_LOOP_2922_3' pipeline 'VITIS_LOOP_2922_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'detectFaces_Pipeline_VITIS_LOOP_2922_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 16.29 seconds. CPU system time: 1.53 seconds. Elapsed time: 17.89 seconds; current allocated memory: 1.221 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'detectFaces_Pipeline_VITIS_LOOP_2855_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'detectFaces_Pipeline_VITIS_LOOP_2855_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.45 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.52 seconds; current allocated memory: 1.235 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'detectFaces' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'detectFaces/inData' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'detectFaces/result_x' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'detectFaces/result_y' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'detectFaces/result_w' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'detectFaces/result_h' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'detectFaces/result_size' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'detectFaces' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'counter' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_8_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_16_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_26ns_32ns_24_30_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_27ns_32ns_27_31_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'detectFaces'.
+INFO: [RTMG 210-278] Implementing memory 'detectFaces_Data_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'detectFaces_result_x_Scale_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'detectFaces_IMG1_data_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.02 seconds. CPU system time: 0.05 seconds. Elapsed time: 1.08 seconds; current allocated memory: 1.236 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 4.29 seconds. CPU system time: 0.4 seconds. Elapsed time: 4.73 seconds; current allocated memory: 1.239 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 10.98 seconds. CPU system time: 0.2 seconds. Elapsed time: 11.19 seconds; current allocated memory: 1.272 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for detectFaces.
+INFO: [VLOG 209-307] Generating Verilog RTL for detectFaces.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 117.07 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1300.63 seconds. CPU system time: 17.14 seconds. Elapsed time: 1320.68 seconds; current allocated memory: 992.016 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a50ti-csg324-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7a50ticsg324-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: source ./face_detection/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name detectFaces detectFaces 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 323.19 seconds. CPU system time: 2.19 seconds. Elapsed time: 325.54 seconds; current allocated memory: 0.000 MB.

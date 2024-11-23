@@ -1,0 +1,292 @@
+../source/haar.cpp:949:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=get_all_data_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline
+        ^
+../source/haar.cpp:950:23: warning: 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, use 'Stable Pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS interface ap_stable port=aa
+                      ^
+../source/haar.cpp:950:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=get_all_data_XLX_SEP_ PragmaOptions=ap_stable port=aa_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS interface ap_stable port=aa
+        ^
+../source/haar.cpp:954:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=get_all_data_XLX_SEP_ PragmaOptions=variable=bank complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=bank complete dim=0
+        ^
+../source/haar.cpp:956:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=get_all_data_XLX_SEP_ PragmaOptions=variable=offset complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=offset complete dim=0
+        ^
+../source/haar.cpp:958:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=get_all_data_XLX_SEP_ PragmaOptions=variable=offset_for_banks complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=offset_for_banks complete dim=0
+        ^
+../source/haar.cpp:960:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=get_all_data_XLX_SEP_ PragmaOptions=variable=data_from_banks complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=data_from_banks complete dim=0
+        ^
+../source/haar.cpp:965:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=get_all_data_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:973:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=get_all_data_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:1023:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=get_all_data_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:1032:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=use_data_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline off
+        ^
+../source/haar.cpp:1052:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier0_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1085:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier1_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1118:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier2_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1151:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier3_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1184:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier4_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1217:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier5_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1250:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier6_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1283:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier7_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1316:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier8_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1349:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier9_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1382:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier10_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1415:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier11_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1448:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier12_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1481:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier13_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1514:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier14_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1547:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier15_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1580:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier16_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1613:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier17_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1646:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier18_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1679:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier19_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1712:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier20_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1745:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier21_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1778:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier22_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1811:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier23_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1844:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier24_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1877:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier25_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1910:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier26_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1943:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier27_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:1976:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier28_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2009:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier29_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2042:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier30_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2075:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier31_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2108:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier32_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2141:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier33_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2174:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier34_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2207:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier35_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2240:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier36_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2273:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier37_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2306:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier38_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2339:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier39_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2372:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier40_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2405:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier41_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2438:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier42_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2471:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier43_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2504:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier44_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2537:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier45_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2570:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier46_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2603:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier47_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2636:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier48_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2669:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier49_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2702:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier50_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:2735:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=classifier51_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+/home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/csynth.tcl:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=detectFaces_XLX_SEP_ PragmaOptions=name=detectFaces_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=detectFaces
+        ^
+../source/haar.cpp:2946:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=off_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS inline off
+        ^
+../source/haar.cpp:2956:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=variable=L complete dim=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=L complete dim=1
+        ^
+../source/haar.cpp:2960:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=variable=I complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=I complete dim=0
+        ^
+../source/haar.cpp:2964:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=variable=II complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=II complete dim=0
+        ^
+../source/haar.cpp:2968:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=variable=SI complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=SI complete dim=0
+        ^
+../source/haar.cpp:2972:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=variable=SII complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=SII complete dim=0
+        ^
+../source/haar.cpp:2977:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:2980:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:2993:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:2996:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:3005:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:3024:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:3026:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:3039:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:3041:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:3054:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:3063:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=processImage_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:3111:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cascadeClassifier_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+../source/haar.cpp:3126:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cascadeClassifier_XLX_SEP_ PragmaOptions=variable=coord complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=coord complete dim=0
+        ^
+../source/haar.cpp:3129:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cascadeClassifier_XLX_SEP_ PragmaOptions=variable=s0 complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=s0 complete dim=0
+        ^
+../source/haar.cpp:3132:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cascadeClassifier_XLX_SEP_ PragmaOptions=variable=s1 complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=s1 complete dim=0
+        ^
+../source/haar.cpp:3135:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cascadeClassifier_XLX_SEP_ PragmaOptions=variable=s2 complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=s2 complete dim=0
+        ^
+../source/haar.cpp:3141:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cascadeClassifier_XLX_SEP_ PragmaOptions=variable=values complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=values complete dim=0
+        ^
+../source/haar.cpp:3145:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cascadeClassifier_XLX_SEP_ PragmaOptions=variable=addr_list complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=addr_list complete dim=0
+        ^
+../source/haar.cpp:3149:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cascadeClassifier_XLX_SEP_ PragmaOptions=variable=enable_list complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=enable_list complete dim=0
+        ^
+../source/haar.cpp:3152:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cascadeClassifier_XLX_SEP_ PragmaOptions=variable=_II complete dim=0_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS array_partition variable=_II complete dim=0
+        ^
+../source/haar.cpp:3155:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cascadeClassifier_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:3157:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cascadeClassifier_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS unroll
+        ^
+../source/haar.cpp:3278:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=cascadeClassifier_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+../source/haar.cpp:3105:11: warning: unused parameter 'pt' [-Wunused-parameter]
+  MyPoint pt,
+          ^
+../source/haar.cpp:3372:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=weakClassifier_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INLINE
+        ^
+../source/haar.cpp:3366:7: warning: unused parameter 'w_id' [-Wunused-parameter]
+  int w_id
+      ^
+../source/haar.cpp:3422:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=imageScaler_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS pipeline
+        ^
+97 warnings generated.

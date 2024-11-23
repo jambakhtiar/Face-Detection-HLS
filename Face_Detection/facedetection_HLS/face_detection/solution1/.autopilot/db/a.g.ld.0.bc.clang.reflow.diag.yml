@@ -1,0 +1,4556 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../source/haar.cpp, Line: 3344, Column: 11 }
+Function:        _Z17cascadeClassifier7MyPointPA25_7ap_uintILi18EEPA2_S0_ILi26EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'weakClassifier(int, ap_uint<18>*, int, int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 3368, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cascadeClassifier(MyPoint, ap_uint<18> (*) [25], ap_uint<26> (*) [2])'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 3110, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../source/haar.cpp, Line: 3335, Column: 7 }
+Function:        _Z17cascadeClassifier7MyPointPA25_7ap_uintILi18EEPA2_S0_ILi26EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_all_data(ap_uint<18>*, ap_uint<10>*, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 947, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'cascadeClassifier(MyPoint, ap_uint<18> (*) [25], ap_uint<26> (*) [2])'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 3110, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../source/haar.cpp, Line: 3077, Column: 22 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'cascadeClassifier(MyPoint, ap_uint<18> (*) [25], ap_uint<26> (*) [2])'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 3110, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 963, Column: 3 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Loop '''
+  - LoopName:        COMPUTE_BANK_AND_OFFSET
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 971, Column: 3 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Loop '''
+  - LoopName:        ASSIGN_OFFSET_FOR_BANKS
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 1021, Column: 3 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Loop '''
+  - LoopName:        CHOOSE_DATA
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 3337, Column: 26 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_3337_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIu
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3023:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3025:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIj
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3038:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '49'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SetIi
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3040:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Ilast
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3053:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '24'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        LineBuf
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3062:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '23'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP1
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3154:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COPY_LOOP2
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3156:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        COMPUTE_BANK_AND_OFFSET
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:963:3'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '12'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ASSIGN_OFFSET_FOR_BANKS
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:971:3'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '28'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CHOOSE_DATA
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:1021:3'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '12'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_3337_1
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3337:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '12'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize2y
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:3004:3'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '24'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1i
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2992:3'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize1j
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2995:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '50'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initialize0u
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2976:3'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Initailize0v
+  - String:          ''' ('
+  - LoopLoc:         '../source/haar.cpp:2979:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          processImage
+  - String:          ''' completely with a factor of '
+  - Factor:          '25'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 456, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::mantissa() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 503, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::expv() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 485, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::__signbit() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 512, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 116, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IidET_T0_b
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, double>(double, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 116, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
+                   Line: 55, Column: 0 }
+Function:        __hls_fptosi_double_i32
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_cast_IEEE754<int, double>(double, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 116, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          __hls_fptosi_double_i32
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
+                       Line: 55, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2814, Column: 0 }
+Function:        _Z7myRoundf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          __hls_fptosi_double_i32
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
+                       Line: 55, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'myRound(float)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2814, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 283, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::mantissa() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 340, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::expv() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 316, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EfET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::__signbit() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 349, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 116, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IifET_T0_b
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_cast_IEEE754<int, float>(float, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 116, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
+                   Line: 51, Column: 0 }
+Function:        __hls_fptosi_float_i32
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_cast_IEEE754<int, float>(float, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 116, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          __hls_fptosi_float_i32
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
+                       Line: 51, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int_sqrt(ap_uint<32>)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 3429, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier0(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1050, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier1(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1083, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier2(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1116, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier3(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1149, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier4(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1182, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier5(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1215, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier6(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1248, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier7(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1281, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier8(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1314, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier9(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1347, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier10(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1380, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier11(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1413, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier12(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1446, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier13(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1479, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier14(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1512, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier15(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1545, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier16(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1578, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier17(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1611, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier18(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1644, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier19(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1677, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier20(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1710, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier21(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1743, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier22(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1776, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier23(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1809, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier24(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1842, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier25(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1875, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier26(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1908, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier27(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1941, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier28(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 1974, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier29(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2007, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier30(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2040, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier31(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2073, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier32(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2106, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier33(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2139, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier34(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2172, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier35(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2205, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier36(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2238, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier37(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2271, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier38(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2304, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier39(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2337, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier40(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2370, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier41(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2403, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier42(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2436, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier43(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2469, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier44(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2502, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier45(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2535, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier46(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2568, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier47(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2601, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier48(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2634, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier49(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2667, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier50(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2700, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'classifier51(ap_uint<18> (*) [25], int)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2733, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_bank(ap_uint<10>)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 31, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_offset(ap_uint<10>)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 36, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'myRound(float)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2814, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data0(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 41, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data4(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data6(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 254, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data7(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 287, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data8(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 321, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data10(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 369, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data13(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 471, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data14(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 504, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data16(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 572, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data17(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 605, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data19(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 674, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data21(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 742, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data22(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 771, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data23(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 805, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data24(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 835, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data25(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 866, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data26(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 896, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_data27(int, ap_uint<18>*)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 923, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2944, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2832, Column: 0 }
+Function:        detectFaces
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'myRound(float)'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2814, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          detectFaces
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2832, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2832, Column: 0 }
+Function:        detectFaces
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          __hls_fptosi_float_i32
+    DebugLoc:        { File: /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
+                       Line: 51, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          detectFaces
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2832, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../source/haar.cpp, Line: 2832, Column: 0 }
+Function:        detectFaces
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'imageScaler(int, int, unsigned char (*) [320], int, int, unsigned char (*) [320])'
+    DebugLoc:        { File: ../source/haar.cpp, Line: 3404, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          detectFaces
+    DebugLoc:        { File: ../source/haar.cpp, Line: 2832, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../source/haar.cpp, Line: 3125, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ17cascadeClassifier7MyPointPA25_7ap_uintILi18EEPA2_S0_ILi26EEE5coord
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../source/haar.cpp, Line: 2971, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE3SII
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../source/haar.cpp, Line: 2967, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE2SI
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../source/haar.cpp, Line: 2963, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE2II
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../source/haar.cpp, Line: 2959, Column: 0 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE1I
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../source/haar.cpp, Line: 959, Column: 11 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          data_from_banks.i.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../source/haar.cpp, Line: 3140, Column: 11 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          values.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../source/haar.cpp, Line: 3144, Column: 11 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          addr_list.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../source/haar.cpp, Line: 3148, Column: 6 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          enable_list.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../source/haar.cpp, Line: 3151, Column: 11 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _II.i
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../source/haar.cpp, Line: 2955, Column: 17 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          L
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../source/haar.cpp, Line: 1025, Column: 14 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../source/haar.cpp, Line: 1025, Column: 14 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../source/haar.cpp, Line: 1025, Column: 14 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../source/haar.cpp, Line: 1025, Column: 14 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../source/haar.cpp, Line: 1025, Column: 14 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../source/haar.cpp, Line: 1025, Column: 14 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../source/haar.cpp, Line: 1025, Column: 14 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../source/haar.cpp, Line: 1025, Column: 14 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../source/haar.cpp, Line: 1025, Column: 14 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../source/haar.cpp, Line: 1025, Column: 14 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../source/haar.cpp, Line: 1025, Column: 14 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../source/haar.cpp, Line: 1025, Column: 14 }
+Function:        _Z12processImagefiiPiS_S_S_S_PA320_h6MySize
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: ../source/haar.cpp, Line: 2885, Column: 3 }
+Function:        detectFaces
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        L1
+  - String:          '''('
+  - LoopLoc:         '../source/haar.cpp:2885:3'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Initialize2x
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:3007:5'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_2850_1
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:2850:24'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_2922_3
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:2922:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_2855_2
+  - String:          '> at '
+  - LoopLoc:         '../source/haar.cpp:2855:26'
+  - String:          ' '
+...

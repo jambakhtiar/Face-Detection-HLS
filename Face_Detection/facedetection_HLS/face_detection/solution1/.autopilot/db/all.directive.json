@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "detectFaces",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "detectFaces"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

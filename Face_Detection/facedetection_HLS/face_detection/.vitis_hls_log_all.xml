@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'counter' is power-on initialization." projectName="face_detection" solutionName="solution1" date="2024-09-04T13:52:54.676+0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1016] The critical path in module 'detectFaces_Pipeline_imageScalerL1_imageScalerL1_1' consists of the following:&#xA;&#x9;'store' operation 0 bit ('j_2_write_ln3406', ../source/haar.cpp:3406->../source/haar.cpp:2899) of constant 0 on local variable 'j', ../source/haar.cpp:3406->../source/haar.cpp:2899 [17]  (1.610 ns)&#xA;&#x9;'load' operation 9 bit ('j_2_load', ../source/haar.cpp:3421->../source/haar.cpp:2899) on local variable 'j', ../source/haar.cpp:3406->../source/haar.cpp:2899 [25]  (0.000 ns)&#xA;&#x9;'icmp' operation 1 bit ('icmp_ln3421', ../source/haar.cpp:3421->../source/haar.cpp:2899) [30]  (2.119 ns)&#xA;&#x9;'select' operation 9 bit ('select_ln3408', ../source/haar.cpp:3408->../source/haar.cpp:2899) [31]  (1.084 ns)&#xA;&#x9;'add' operation 9 bit ('add_ln3421', ../source/haar.cpp:3421->../source/haar.cpp:2899) [70]  (2.119 ns)&#xA;&#x9;'store' operation 0 bit ('j_2_write_ln3406', ../source/haar.cpp:3406->../source/haar.cpp:2899) of variable 'add_ln3421', ../source/haar.cpp:3421->../source/haar.cpp:2899 on local variable 'j', ../source/haar.cpp:3406->../source/haar.cpp:2899 [73]  (1.610 ns)&#xA;&#xA;&#xA;Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-1016.html" projectName="face_detection" solutionName="solution1" date="2024-09-04T13:42:52.430+0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-871] Estimated clock period (8.542 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).&#xA;Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-871.html" projectName="face_detection" solutionName="solution1" date="2024-09-04T13:42:52.412+0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'L1' (../source/haar.cpp:2885:3) in function 'detectFaces' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.&#xA;Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-960.html" projectName="face_detection" solutionName="solution1" date="2024-09-04T13:41:21.970+0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'Pixelx' (../source/haar.cpp:3020:13) in function 'processImage' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.&#xA;Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-960.html" projectName="face_detection" solutionName="solution1" date="2024-09-04T13:40:46.601+0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'Stages' (../source/haar.cpp:3275:3) in function 'processImage' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.&#xA;Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=200-960.html" projectName="face_detection" solutionName="solution1" date="2024-09-04T13:40:46.556+0500" type="Warning"/>
+        <logs message="WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (../source/haar.cpp:1025:14)" projectName="face_detection" solutionName="solution1" date="2024-09-04T13:39:41.247+0500" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5292] unused parameter 'w_id' (../source/haar.cpp:3366:7)" projectName="face_detection" solutionName="solution1" date="2024-09-04T13:31:47.420+0500" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5292] unused parameter 'pt' (../source/haar.cpp:3105:11)" projectName="face_detection" solutionName="solution1" date="2024-09-04T13:31:47.369+0500" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5538] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, use 'Stable Pragma' instead (../source/haar.cpp:950:23)" projectName="face_detection" solutionName="solution1" date="2024-09-04T13:31:47.347+0500" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

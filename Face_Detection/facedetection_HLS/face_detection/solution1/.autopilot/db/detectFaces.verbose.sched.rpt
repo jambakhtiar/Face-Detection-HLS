@@ -1,0 +1,842 @@
+
+
+================================================================
+== Vitis HLS Report for 'detectFaces'
+================================================================
+* Date:           Wed Sep  4 13:52:07 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        face_detection
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a50ti-csg324-1L
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  8.542 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- L1      |        ?|        ?|         ?|          -|          -|    13|        no|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 58
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 57 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 56 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 45 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 50 
+50 --> 51 
+51 --> 52 
+52 --> 53 
+53 --> 54 
+54 --> 55 
+55 --> 3 
+56 --> 58 
+57 --> 58 
+58 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.40>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%spectopmodule_ln2822 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_5" [../source/haar.cpp:2822]   --->   Operation 59 'spectopmodule' 'spectopmodule_ln2822' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %inData, void @empty_2, i32 0, i32 0, void @empty_3, i32 4294967295, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 60 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %inData"   --->   Operation 61 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %result_x, void @empty_2, i32 0, i32 0, void @empty_3, i32 4294967295, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 62 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %result_x"   --->   Operation 63 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %result_y, void @empty_2, i32 0, i32 0, void @empty_3, i32 4294967295, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 64 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %result_y"   --->   Operation 65 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %result_w, void @empty_2, i32 0, i32 0, void @empty_3, i32 4294967295, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 66 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %result_w"   --->   Operation 67 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %result_h, void @empty_2, i32 0, i32 0, void @empty_3, i32 4294967295, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 68 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %result_h"   --->   Operation 69 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %result_size"   --->   Operation 70 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %result_size, void @empty_4, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 71 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%result_x_Scale = alloca i64 1" [../source/haar.cpp:2836]   --->   Operation 72 'alloca' 'result_x_Scale' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%result_y_Scale = alloca i64 1" [../source/haar.cpp:2837]   --->   Operation 73 'alloca' 'result_y_Scale' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%result_w_Scale = alloca i64 1" [../source/haar.cpp:2838]   --->   Operation 74 'alloca' 'result_w_Scale' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%result_h_Scale = alloca i64 1" [../source/haar.cpp:2839]   --->   Operation 75 'alloca' 'result_h_Scale' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%IMG1_data = alloca i64 1" [../source/haar.cpp:2870]   --->   Operation 76 'alloca' 'IMG1_data' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%counter_load = load i32 %counter" [../source/haar.cpp:2849]   --->   Operation 77 'load' 'counter_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%trunc_ln2849 = trunc i32 %counter_load" [../source/haar.cpp:2849]   --->   Operation 78 'trunc' 'trunc_ln2849' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%trunc_ln2849_1 = trunc i32 %counter_load" [../source/haar.cpp:2849]   --->   Operation 79 'trunc' 'trunc_ln2849_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (2.70ns)   --->   "%icmp_ln2849 = icmp_slt  i32 %counter_load, i32 240" [../source/haar.cpp:2849]   --->   Operation 80 'icmp' 'icmp_ln2849' <Predicate = true> <Delay = 2.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%br_ln2849 = br i1 %icmp_ln2849, void %if.end23, void %VITIS_LOOP_2850_1" [../source/haar.cpp:2849]   --->   Operation 81 'br' 'br_ln2849' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i17 @_ssdm_op_BitConcatenate.i17.i9.i8, i9 %trunc_ln2849_1, i8 0" [../source/haar.cpp:2851]   --->   Operation 82 'bitconcatenate' 'tmp_s' <Predicate = (icmp_ln2849)> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%tmp_30 = bitconcatenate i17 @_ssdm_op_BitConcatenate.i17.i11.i6, i11 %trunc_ln2849, i6 0" [../source/haar.cpp:2851]   --->   Operation 83 'bitconcatenate' 'tmp_30' <Predicate = (icmp_ln2849)> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (2.18ns)   --->   "%add_ln2851 = add i17 %tmp_s, i17 %tmp_30" [../source/haar.cpp:2851]   --->   Operation 84 'add' 'add_ln2851' <Predicate = (icmp_ln2849)> <Delay = 2.18> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 85 [2/2] (0.00ns)   --->   "%call_ln2851 = call void @detectFaces_Pipeline_VITIS_LOOP_2850_1, i17 %add_ln2851, i8 %inData, i8 %Data" [../source/haar.cpp:2851]   --->   Operation 85 'call' 'call_ln2851' <Predicate = (icmp_ln2849)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 86 [1/1] (2.70ns)   --->   "%add_ln2853 = add i32 %counter_load, i32 1" [../source/haar.cpp:2853]   --->   Operation 86 'add' 'add_ln2853' <Predicate = (icmp_ln2849)> <Delay = 2.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%store_ln2853 = store i32 %add_ln2853, i32 %counter" [../source/haar.cpp:2853]   --->   Operation 87 'store' 'store_ln2853' <Predicate = (icmp_ln2849)> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (2.70ns)   --->   "%icmp_ln2854 = icmp_slt  i32 %add_ln2853, i32 240" [../source/haar.cpp:2854]   --->   Operation 88 'icmp' 'icmp_ln2854' <Predicate = (icmp_ln2849)> <Delay = 2.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 1.61>
+ST_2 : Operation 89 [1/2] (0.00ns)   --->   "%call_ln2851 = call void @detectFaces_Pipeline_VITIS_LOOP_2850_1, i17 %add_ln2851, i8 %inData, i8 %Data" [../source/haar.cpp:2851]   --->   Operation 89 'call' 'call_ln2851' <Predicate = (icmp_ln2849)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 90 [1/1] (0.00ns)   --->   "%br_ln2854 = br i1 %icmp_ln2854, void %if.end23, void %for.inc20.preheader" [../source/haar.cpp:2854]   --->   Operation 90 'br' 'br_ln2854' <Predicate = (icmp_ln2849)> <Delay = 0.00>
+ST_2 : Operation 91 [1/1] (0.00ns)   --->   "%factor = alloca i32 1" [../source/haar.cpp:2872]   --->   Operation 91 'alloca' 'factor' <Predicate = (!icmp_ln2854) | (!icmp_ln2849)> <Delay = 0.00>
+ST_2 : Operation 92 [1/1] (0.00ns)   --->   "%res_size_Scale_0 = alloca i32 1"   --->   Operation 92 'alloca' 'res_size_Scale_0' <Predicate = (!icmp_ln2854) | (!icmp_ln2849)> <Delay = 0.00>
+ST_2 : Operation 93 [1/1] (1.61ns)   --->   "%store_ln0 = store i32 0, i32 %res_size_Scale_0"   --->   Operation 93 'store' 'store_ln0' <Predicate = (!icmp_ln2854) | (!icmp_ln2849)> <Delay = 1.61>
+ST_2 : Operation 94 [1/1] (1.61ns)   --->   "%store_ln2872 = store i32 1, i32 %factor" [../source/haar.cpp:2872]   --->   Operation 94 'store' 'store_ln2872' <Predicate = (!icmp_ln2854) | (!icmp_ln2849)> <Delay = 1.61>
+ST_2 : Operation 95 [1/1] (0.00ns)   --->   "%br_ln2885 = br void %while.cond" [../source/haar.cpp:2885]   --->   Operation 95 'br' 'br_ln2885' <Predicate = (!icmp_ln2854) | (!icmp_ln2849)> <Delay = 0.00>
+ST_2 : Operation 96 [2/2] (0.00ns)   --->   "%call_ln0 = call void @detectFaces_Pipeline_VITIS_LOOP_2855_2, i32 %result_x, i32 %result_y, i32 %result_w, i32 %result_h"   --->   Operation 96 'call' 'call_ln0' <Predicate = (icmp_ln2849 & icmp_ln2854)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 6.30>
+ST_3 : Operation 97 [1/1] (0.00ns)   --->   "%factor_2 = load i32 %factor" [../source/haar.cpp:2919]   --->   Operation 97 'load' 'factor_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 98 [16/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 98 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 99 [16/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 99 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 6.30>
+ST_4 : Operation 100 [15/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 100 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 101 [15/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 101 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 6.30>
+ST_5 : Operation 102 [14/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 102 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 103 [14/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 103 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 6.30>
+ST_6 : Operation 104 [13/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 104 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 105 [13/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 105 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 6.30>
+ST_7 : Operation 106 [12/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 106 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 107 [12/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 107 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 6.30>
+ST_8 : Operation 108 [11/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 108 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 109 [11/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 109 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 6.30>
+ST_9 : Operation 110 [10/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 110 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 111 [10/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 111 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 6.30>
+ST_10 : Operation 112 [9/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 112 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 113 [9/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 113 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 6.30>
+ST_11 : Operation 114 [8/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 114 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 115 [8/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 115 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 6.30>
+ST_12 : Operation 116 [7/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 116 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 117 [7/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 117 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 6.30>
+ST_13 : Operation 118 [6/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 118 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 119 [6/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 119 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 6.30>
+ST_14 : Operation 120 [5/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 120 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 121 [5/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 121 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 6.30>
+ST_15 : Operation 122 [4/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 122 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 123 [4/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 123 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 6.30>
+ST_16 : Operation 124 [3/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 124 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 125 [3/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 125 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 6.30>
+ST_17 : Operation 126 [2/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 126 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 127 [2/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 127 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 6.30>
+ST_18 : Operation 128 [1/16] (6.30ns)   --->   "%dc_2 = fdiv i32 320, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 128 'fdiv' 'dc_2' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 129 [1/16] (6.30ns)   --->   "%dc_3 = fdiv i32 240, i32 %factor_2" [../source/haar.cpp:2885]   --->   Operation 129 'fdiv' 'dc_3' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 5.09>
+ST_19 : Operation 130 [2/2] (5.09ns)   --->   "%tmp_25 = fcmp_ogt  i32 %dc_2, i32 25" [../source/haar.cpp:2885]   --->   Operation 130 'fcmp' 'tmp_25' <Predicate = true> <Delay = 5.09> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 5.09> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 131 [2/2] (5.09ns)   --->   "%tmp_27 = fcmp_ogt  i32 %dc_3, i32 25" [../source/haar.cpp:2885]   --->   Operation 131 'fcmp' 'tmp_27' <Predicate = true> <Delay = 5.09> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 5.09> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 7.28>
+ST_20 : Operation 132 [1/1] (0.00ns)   --->   "%res_size_Scale_0_load = load i32 %res_size_Scale_0"   --->   Operation 132 'load' 'res_size_Scale_0_load' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 133 [1/1] (0.00ns)   --->   "%data_2 = bitcast i32 %dc_2" [../source/haar.cpp:2885]   --->   Operation 133 'bitcast' 'data_2' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 134 [1/1] (0.00ns)   --->   "%xs_exp_2 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %data_2, i32 23, i32 30" [../source/haar.cpp:2885]   --->   Operation 134 'partselect' 'xs_exp_2' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 135 [1/1] (0.00ns)   --->   "%trunc_ln2885 = trunc i32 %data_2" [../source/haar.cpp:2885]   --->   Operation 135 'trunc' 'trunc_ln2885' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 136 [1/1] (2.11ns)   --->   "%icmp_ln2885 = icmp_ne  i8 %xs_exp_2, i8 255" [../source/haar.cpp:2885]   --->   Operation 136 'icmp' 'icmp_ln2885' <Predicate = true> <Delay = 2.11> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 137 [1/1] (2.38ns)   --->   "%icmp_ln2885_1 = icmp_eq  i23 %trunc_ln2885, i23 0" [../source/haar.cpp:2885]   --->   Operation 137 'icmp' 'icmp_ln2885_1' <Predicate = true> <Delay = 2.38> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.38> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 138 [1/1] (0.00ns) (grouped into LUT with out node and_ln2885)   --->   "%or_ln2885 = or i1 %icmp_ln2885_1, i1 %icmp_ln2885" [../source/haar.cpp:2885]   --->   Operation 138 'or' 'or_ln2885' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 139 [1/2] (5.09ns)   --->   "%tmp_25 = fcmp_ogt  i32 %dc_2, i32 25" [../source/haar.cpp:2885]   --->   Operation 139 'fcmp' 'tmp_25' <Predicate = true> <Delay = 5.09> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 5.09> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 140 [1/1] (0.00ns) (grouped into LUT with out node and_ln2885)   --->   "%and_ln2885_1 = and i1 %or_ln2885, i1 %tmp_25" [../source/haar.cpp:2885]   --->   Operation 140 'and' 'and_ln2885_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 141 [1/1] (0.00ns)   --->   "%data_3 = bitcast i32 %dc_3" [../source/haar.cpp:2885]   --->   Operation 141 'bitcast' 'data_3' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 142 [1/1] (0.00ns)   --->   "%xs_exp_3 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %data_3, i32 23, i32 30" [../source/haar.cpp:2885]   --->   Operation 142 'partselect' 'xs_exp_3' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 143 [1/1] (0.00ns)   --->   "%trunc_ln2885_1 = trunc i32 %data_3" [../source/haar.cpp:2885]   --->   Operation 143 'trunc' 'trunc_ln2885_1' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 144 [1/1] (2.11ns)   --->   "%icmp_ln2885_2 = icmp_ne  i8 %xs_exp_3, i8 255" [../source/haar.cpp:2885]   --->   Operation 144 'icmp' 'icmp_ln2885_2' <Predicate = true> <Delay = 2.11> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 145 [1/1] (2.38ns)   --->   "%icmp_ln2885_3 = icmp_eq  i23 %trunc_ln2885_1, i23 0" [../source/haar.cpp:2885]   --->   Operation 145 'icmp' 'icmp_ln2885_3' <Predicate = true> <Delay = 2.38> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.38> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 146 [1/1] (0.00ns) (grouped into LUT with out node and_ln2885)   --->   "%or_ln2885_1 = or i1 %icmp_ln2885_3, i1 %icmp_ln2885_2" [../source/haar.cpp:2885]   --->   Operation 146 'or' 'or_ln2885_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 147 [1/2] (5.09ns)   --->   "%tmp_27 = fcmp_ogt  i32 %dc_3, i32 25" [../source/haar.cpp:2885]   --->   Operation 147 'fcmp' 'tmp_27' <Predicate = true> <Delay = 5.09> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 5.09> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 148 [1/1] (0.00ns) (grouped into LUT with out node and_ln2885)   --->   "%and_ln2885_2 = and i1 %or_ln2885_1, i1 %tmp_27" [../source/haar.cpp:2885]   --->   Operation 148 'and' 'and_ln2885_2' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 149 [1/1] (0.97ns) (out node of the LUT)   --->   "%and_ln2885 = and i1 %and_ln2885_1, i1 %and_ln2885_2" [../source/haar.cpp:2885]   --->   Operation 149 'and' 'and_ln2885' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 150 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 13, i64 13, i64 13"   --->   Operation 150 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 151 [1/1] (0.00ns)   --->   "%br_ln2885 = br i1 %and_ln2885, void %for.inc69.preheader, void %while.body" [../source/haar.cpp:2885]   --->   Operation 151 'br' 'br_ln2885' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 152 [1/1] (0.00ns)   --->   "%xs_sign_2 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %data_2, i32 31" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:294->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:13->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 152 'bitselect' 'xs_sign_2' <Predicate = (and_ln2885)> <Delay = 0.00>
+ST_20 : Operation 153 [1/1] (0.00ns)   --->   "%mantissa_2 = bitconcatenate i25 @_ssdm_op_BitConcatenate.i25.i1.i23.i1, i1 1, i23 %trunc_ln2885, i1 0" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:15->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 153 'bitconcatenate' 'mantissa_2' <Predicate = (and_ln2885)> <Delay = 0.00>
+ST_20 : Operation 154 [1/1] (0.00ns)   --->   "%zext_ln15_2 = zext i25 %mantissa_2" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:15->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 154 'zext' 'zext_ln15_2' <Predicate = (and_ln2885)> <Delay = 0.00>
+ST_20 : Operation 155 [1/1] (0.00ns)   --->   "%zext_ln317 = zext i8 %xs_exp_2" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:317->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 155 'zext' 'zext_ln317' <Predicate = (and_ln2885)> <Delay = 0.00>
+ST_20 : Operation 156 [1/1] (2.11ns)   --->   "%add_ln317 = add i9 %zext_ln317, i9 385" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:317->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 156 'add' 'add_ln317' <Predicate = (and_ln2885)> <Delay = 2.11> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 157 [1/1] (0.00ns)   --->   "%tmp_12 = bitselect i1 @_ssdm_op_BitSelect.i1.i9.i32, i9 %add_ln317, i32 8" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 157 'bitselect' 'tmp_12' <Predicate = (and_ln2885)> <Delay = 0.00>
+ST_20 : Operation 158 [1/1] (2.11ns)   --->   "%sub_ln18_2 = sub i8 127, i8 %xs_exp_2" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 158 'sub' 'sub_ln18_2' <Predicate = (and_ln2885)> <Delay = 2.11> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 159 [1/1] (0.00ns)   --->   "%sext_ln18_5 = sext i8 %sub_ln18_2" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 159 'sext' 'sext_ln18_5' <Predicate = (and_ln2885)> <Delay = 0.00>
+ST_20 : Operation 160 [1/1] (1.08ns)   --->   "%select_ln18_4 = select i1 %tmp_12, i9 %sext_ln18_5, i9 %add_ln317" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 160 'select' 'select_ln18_4' <Predicate = (and_ln2885)> <Delay = 1.08> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.08> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_20 : Operation 161 [1/1] (0.00ns)   --->   "%sext_ln18_6 = sext i9 %select_ln18_4" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 161 'sext' 'sext_ln18_6' <Predicate = (and_ln2885)> <Delay = 0.00>
+ST_20 : Operation 162 [1/1] (0.00ns)   --->   "%zext_ln18_2 = zext i32 %sext_ln18_6" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 162 'zext' 'zext_ln18_2' <Predicate = (and_ln2885)> <Delay = 0.00>
+ST_20 : Operation 163 [1/1] (4.08ns)   --->   "%lshr_ln18_2 = lshr i79 %zext_ln15_2, i79 %zext_ln18_2" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 163 'lshr' 'lshr_ln18_2' <Predicate = (and_ln2885)> <Delay = 4.08> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 4.08> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 164 [1/1] (4.08ns)   --->   "%shl_ln18_2 = shl i79 %zext_ln15_2, i79 %zext_ln18_2" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 164 'shl' 'shl_ln18_2' <Predicate = (and_ln2885)> <Delay = 4.08> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 4.08> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 165 [1/1] (0.00ns)   --->   "%tmp_31 = partselect i32 @_ssdm_op_PartSelect.i32.i79.i32.i32, i79 %lshr_ln18_2, i32 24, i32 55" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:21->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 165 'partselect' 'tmp_31' <Predicate = (and_ln2885)> <Delay = 0.00>
+ST_20 : Operation 166 [1/1] (0.00ns)   --->   "%tmp_32 = partselect i32 @_ssdm_op_PartSelect.i32.i79.i32.i32, i79 %shl_ln18_2, i32 24, i32 55" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:21->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 166 'partselect' 'tmp_32' <Predicate = (and_ln2885)> <Delay = 0.00>
+ST_20 : Operation 167 [1/1] (0.00ns)   --->   "%xs_sign_3 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %data_3, i32 31" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:294->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:13->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 167 'bitselect' 'xs_sign_3' <Predicate = (and_ln2885)> <Delay = 0.00>
+ST_20 : Operation 168 [1/1] (0.00ns)   --->   "%zext_ln317_1 = zext i8 %xs_exp_3" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:317->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 168 'zext' 'zext_ln317_1' <Predicate = (and_ln2885)> <Delay = 0.00>
+ST_20 : Operation 169 [1/1] (2.11ns)   --->   "%add_ln317_1 = add i9 %zext_ln317_1, i9 385" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:317->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 169 'add' 'add_ln317_1' <Predicate = (and_ln2885)> <Delay = 2.11> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 170 [1/1] (0.00ns)   --->   "%tmp_14 = bitselect i1 @_ssdm_op_BitSelect.i1.i9.i32, i9 %add_ln317_1, i32 8" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 170 'bitselect' 'tmp_14' <Predicate = (and_ln2885)> <Delay = 0.00>
+ST_20 : Operation 171 [1/1] (2.11ns)   --->   "%sub_ln18_3 = sub i8 127, i8 %xs_exp_3" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 171 'sub' 'sub_ln18_3' <Predicate = (and_ln2885)> <Delay = 2.11> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 172 [1/1] (0.00ns)   --->   "%sext_ln18_7 = sext i8 %sub_ln18_3" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 172 'sext' 'sext_ln18_7' <Predicate = (and_ln2885)> <Delay = 0.00>
+ST_20 : Operation 173 [1/1] (1.08ns)   --->   "%select_ln18_6 = select i1 %tmp_14, i9 %sext_ln18_7, i9 %add_ln317_1" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 173 'select' 'select_ln18_6' <Predicate = (and_ln2885)> <Delay = 1.08> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.08> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_20 : Operation 174 [4/4] (5.78ns)   --->   "%factor_1 = fmul i32 %factor_2, i32 1.2" [../source/haar.cpp:2919]   --->   Operation 174 'fmul' 'factor_1' <Predicate = (and_ln2885)> <Delay = 5.78> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 175 [2/2] (0.00ns)   --->   "%call_ln0 = call void @detectFaces_Pipeline_VITIS_LOOP_2922_3, i32 %result_x_Scale, i32 %result_x, i32 %result_y_Scale, i32 %result_y, i32 %result_w_Scale, i32 %result_w, i32 %result_h_Scale, i32 %result_h"   --->   Operation 175 'call' 'call_ln0' <Predicate = (!and_ln2885)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 21 <SV = 20> <Delay = 5.78>
+ST_21 : Operation 176 [1/1] (0.79ns)   --->   "%val_2 = select i1 %tmp_12, i32 %tmp_31, i32 %tmp_32" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 176 'select' 'val_2' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_21 : Operation 177 [1/1] (0.00ns)   --->   "%mantissa_3 = bitconcatenate i25 @_ssdm_op_BitConcatenate.i25.i1.i23.i1, i1 1, i23 %trunc_ln2885_1, i1 0" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:15->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 177 'bitconcatenate' 'mantissa_3' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 178 [1/1] (0.00ns)   --->   "%zext_ln15_3 = zext i25 %mantissa_3" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:15->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 178 'zext' 'zext_ln15_3' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 179 [1/1] (0.00ns)   --->   "%sext_ln18_8 = sext i9 %select_ln18_6" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 179 'sext' 'sext_ln18_8' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 180 [1/1] (0.00ns)   --->   "%zext_ln18_3 = zext i32 %sext_ln18_8" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 180 'zext' 'zext_ln18_3' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 181 [1/1] (4.08ns)   --->   "%lshr_ln18_3 = lshr i79 %zext_ln15_3, i79 %zext_ln18_3" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 181 'lshr' 'lshr_ln18_3' <Predicate = (tmp_14)> <Delay = 4.08> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 4.08> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 182 [1/1] (4.08ns)   --->   "%shl_ln18_3 = shl i79 %zext_ln15_3, i79 %zext_ln18_3" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 182 'shl' 'shl_ln18_3' <Predicate = (!tmp_14)> <Delay = 4.08> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 4.08> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 183 [1/1] (0.00ns)   --->   "%tmp_33 = partselect i32 @_ssdm_op_PartSelect.i32.i79.i32.i32, i79 %lshr_ln18_3, i32 24, i32 55" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:21->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 183 'partselect' 'tmp_33' <Predicate = (tmp_14)> <Delay = 0.00>
+ST_21 : Operation 184 [1/1] (0.00ns)   --->   "%tmp_34 = partselect i32 @_ssdm_op_PartSelect.i32.i79.i32.i32, i79 %shl_ln18_3, i32 24, i32 55" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:21->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 184 'partselect' 'tmp_34' <Predicate = (!tmp_14)> <Delay = 0.00>
+ST_21 : Operation 185 [1/1] (0.79ns)   --->   "%val_3 = select i1 %tmp_14, i32 %tmp_33, i32 %tmp_34" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 185 'select' 'val_3' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_21 : Operation 186 [31/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 186 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 187 [3/4] (5.78ns)   --->   "%factor_1 = fmul i32 %factor_2, i32 1.2" [../source/haar.cpp:2919]   --->   Operation 187 'fmul' 'factor_1' <Predicate = true> <Delay = 5.78> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 5.78>
+ST_22 : Operation 188 [30/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 188 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 189 [30/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 189 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 190 [2/4] (5.78ns)   --->   "%factor_1 = fmul i32 %factor_2, i32 1.2" [../source/haar.cpp:2919]   --->   Operation 190 'fmul' 'factor_1' <Predicate = true> <Delay = 5.78> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 5.78>
+ST_23 : Operation 191 [29/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 191 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 192 [29/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 192 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 193 [1/4] (5.78ns)   --->   "%factor_1 = fmul i32 %factor_2, i32 1.2" [../source/haar.cpp:2919]   --->   Operation 193 'fmul' 'factor_1' <Predicate = true> <Delay = 5.78> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 4.14>
+ST_24 : Operation 194 [28/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 194 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 195 [28/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 195 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 196 [1/1] (1.61ns)   --->   "%store_ln2872 = store i32 %factor_1, i32 %factor" [../source/haar.cpp:2872]   --->   Operation 196 'store' 'store_ln2872' <Predicate = true> <Delay = 1.61>
+
+State 25 <SV = 24> <Delay = 4.14>
+ST_25 : Operation 197 [27/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 197 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 198 [27/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 198 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 4.14>
+ST_26 : Operation 199 [26/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 199 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 200 [26/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 200 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 4.14>
+ST_27 : Operation 201 [25/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 201 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 202 [25/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 202 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 4.14>
+ST_28 : Operation 203 [24/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 203 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 204 [24/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 204 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 4.14>
+ST_29 : Operation 205 [23/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 205 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 206 [23/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 206 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 4.14>
+ST_30 : Operation 207 [22/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 207 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 208 [22/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 208 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 30> <Delay = 4.14>
+ST_31 : Operation 209 [21/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 209 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 210 [21/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 210 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 31> <Delay = 4.14>
+ST_32 : Operation 211 [20/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 211 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 212 [20/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 212 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 32> <Delay = 4.14>
+ST_33 : Operation 213 [19/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 213 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 214 [19/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 214 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 33> <Delay = 4.14>
+ST_34 : Operation 215 [18/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 215 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 216 [18/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 216 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 34> <Delay = 4.14>
+ST_35 : Operation 217 [17/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 217 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 218 [17/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 218 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 35> <Delay = 4.14>
+ST_36 : Operation 219 [16/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 219 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 220 [16/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 220 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 36> <Delay = 4.14>
+ST_37 : Operation 221 [15/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 221 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 222 [15/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 222 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 37> <Delay = 5.78>
+ST_38 : Operation 223 [4/4] (5.78ns)   --->   "%value_assign = fmul i32 %factor_2, i32 24" [../source/haar.cpp:2889]   --->   Operation 223 'fmul' 'value_assign' <Predicate = true> <Delay = 5.78> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 224 [14/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 224 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 225 [14/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 225 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 39 <SV = 38> <Delay = 5.78>
+ST_39 : Operation 226 [3/4] (5.78ns)   --->   "%value_assign = fmul i32 %factor_2, i32 24" [../source/haar.cpp:2889]   --->   Operation 226 'fmul' 'value_assign' <Predicate = true> <Delay = 5.78> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 227 [13/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 227 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 228 [13/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 228 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 40 <SV = 39> <Delay = 5.78>
+ST_40 : Operation 229 [2/4] (5.78ns)   --->   "%value_assign = fmul i32 %factor_2, i32 24" [../source/haar.cpp:2889]   --->   Operation 229 'fmul' 'value_assign' <Predicate = true> <Delay = 5.78> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 230 [12/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 230 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 231 [12/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 231 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 41 <SV = 40> <Delay = 5.78>
+ST_41 : Operation 232 [1/4] (5.78ns)   --->   "%value_assign = fmul i32 %factor_2, i32 24" [../source/haar.cpp:2889]   --->   Operation 232 'fmul' 'value_assign' <Predicate = true> <Delay = 5.78> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 5.78> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 233 [11/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 233 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 234 [11/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 234 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 42 <SV = 41> <Delay = 5.09>
+ST_42 : Operation 235 [2/2] (4.09ns)   --->   "%conv_i = fpext i32 %value_assign" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 235 'fpext' 'conv_i' <Predicate = true> <Delay = 4.09> <CoreInst = "Float2Double">   --->   Core 64 'Float2Double' <Latency = 1> <II = 1> <Delay = 4.09> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+ST_42 : Operation 236 [1/1] (0.00ns)   --->   "%bitcast_ln2815 = bitcast i32 %value_assign" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 236 'bitcast' 'bitcast_ln2815' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 237 [1/1] (0.00ns)   --->   "%tmp_28 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %bitcast_ln2815, i32 23, i32 30" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 237 'partselect' 'tmp_28' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 238 [1/1] (0.00ns)   --->   "%trunc_ln2815 = trunc i32 %bitcast_ln2815" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 238 'trunc' 'trunc_ln2815' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 239 [1/1] (2.11ns)   --->   "%icmp_ln2815 = icmp_ne  i8 %tmp_28, i8 255" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 239 'icmp' 'icmp_ln2815' <Predicate = true> <Delay = 2.11> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 240 [1/1] (2.38ns)   --->   "%icmp_ln2815_4 = icmp_eq  i23 %trunc_ln2815, i23 0" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 240 'icmp' 'icmp_ln2815_4' <Predicate = true> <Delay = 2.38> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.38> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 241 [2/2] (5.09ns)   --->   "%tmp_29 = fcmp_oge  i32 %value_assign, i32 0" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 241 'fcmp' 'tmp_29' <Predicate = true> <Delay = 5.09> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 5.09> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 242 [10/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 242 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 243 [10/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 243 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 43 <SV = 42> <Delay = 5.09>
+ST_43 : Operation 244 [1/2] (4.09ns)   --->   "%conv_i = fpext i32 %value_assign" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 244 'fpext' 'conv_i' <Predicate = true> <Delay = 4.09> <CoreInst = "Float2Double">   --->   Core 64 'Float2Double' <Latency = 1> <II = 1> <Delay = 4.09> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+ST_43 : Operation 245 [1/2] (5.09ns)   --->   "%tmp_29 = fcmp_oge  i32 %value_assign, i32 0" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 245 'fcmp' 'tmp_29' <Predicate = true> <Delay = 5.09> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 5.09> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 246 [9/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 246 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 247 [9/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 247 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 44 <SV = 43> <Delay = 6.63>
+ST_44 : Operation 248 [1/1] (0.00ns) (grouped into LUT with out node select_ln2815)   --->   "%or_ln2815 = or i1 %icmp_ln2815_4, i1 %icmp_ln2815" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 248 'or' 'or_ln2815' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 249 [1/1] (0.00ns) (grouped into LUT with out node select_ln2815)   --->   "%and_ln2815 = and i1 %or_ln2815, i1 %tmp_29" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 249 'and' 'and_ln2815' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 250 [1/1] (0.98ns) (out node of the LUT)   --->   "%select_ln2815 = select i1 %and_ln2815, i64 0.5, i64 -0.5" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 250 'select' 'select_ln2815' <Predicate = true> <Delay = 0.98> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.98> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_44 : Operation 251 [8/8] (5.65ns)   --->   "%dc = dadd i64 %conv_i, i64 %select_ln2815" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 251 'dadd' 'dc' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 252 [8/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 252 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 253 [8/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 253 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 45 <SV = 44> <Delay = 5.65>
+ST_45 : Operation 254 [7/8] (5.65ns)   --->   "%dc = dadd i64 %conv_i, i64 %select_ln2815" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 254 'dadd' 'dc' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_45 : Operation 255 [7/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 255 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_45 : Operation 256 [7/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 256 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 46 <SV = 45> <Delay = 5.65>
+ST_46 : Operation 257 [6/8] (5.65ns)   --->   "%dc = dadd i64 %conv_i, i64 %select_ln2815" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 257 'dadd' 'dc' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 258 [6/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 258 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 259 [6/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 259 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 47 <SV = 46> <Delay = 5.65>
+ST_47 : Operation 260 [5/8] (5.65ns)   --->   "%dc = dadd i64 %conv_i, i64 %select_ln2815" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 260 'dadd' 'dc' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 261 [5/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 261 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 262 [5/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 262 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 48 <SV = 47> <Delay = 5.65>
+ST_48 : Operation 263 [4/8] (5.65ns)   --->   "%dc = dadd i64 %conv_i, i64 %select_ln2815" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 263 'dadd' 'dc' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 264 [4/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 264 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 265 [4/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 265 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 49 <SV = 48> <Delay = 5.65>
+ST_49 : Operation 266 [3/8] (5.65ns)   --->   "%dc = dadd i64 %conv_i, i64 %select_ln2815" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 266 'dadd' 'dc' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_49 : Operation 267 [3/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 267 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_49 : Operation 268 [3/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 268 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 50 <SV = 49> <Delay = 5.65>
+ST_50 : Operation 269 [2/8] (5.65ns)   --->   "%dc = dadd i64 %conv_i, i64 %select_ln2815" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 269 'dadd' 'dc' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 270 [2/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 270 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 271 [2/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 271 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 51 <SV = 50> <Delay = 5.65>
+ST_51 : Operation 272 [1/8] (5.65ns)   --->   "%dc = dadd i64 %conv_i, i64 %select_ln2815" [../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 272 'dadd' 'dc' <Predicate = true> <Delay = 5.65> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 7> <II = 1> <Delay = 5.65> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 273 [1/31] (4.14ns)   --->   "%sdiv_ln3417 = sdiv i32 20971520, i32 %val_2" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 273 'sdiv' 'sdiv_ln3417' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 30> <II = 27> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 274 [1/30] (4.14ns)   --->   "%sdiv_ln3418 = sdiv i32 15728640, i32 %val_3" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 274 'sdiv' 'sdiv_ln3418' <Predicate = true> <Delay = 4.14> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 29> <II = 24> <Delay = 4.14> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 52 <SV = 51> <Delay = 7.09>
+ST_52 : Operation 275 [1/1] (0.00ns)   --->   "%data = bitcast i64 %dc" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:459->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:13->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 275 'bitcast' 'data' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 276 [1/1] (0.00ns)   --->   "%xs_exp = partselect i11 @_ssdm_op_PartSelect.i11.i64.i32.i32, i64 %data, i32 52, i32 62" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:461->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:13->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 276 'partselect' 'xs_exp' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 277 [1/1] (0.00ns)   --->   "%trunc_ln505 = trunc i64 %data" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:505->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:15->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 277 'trunc' 'trunc_ln505' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 278 [1/1] (0.00ns)   --->   "%mantissa = bitconcatenate i54 @_ssdm_op_BitConcatenate.i54.i1.i52.i1, i1 1, i52 %trunc_ln505, i1 0" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:15->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 278 'bitconcatenate' 'mantissa' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 279 [1/1] (0.00ns)   --->   "%zext_ln15 = zext i54 %mantissa" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:15->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 279 'zext' 'zext_ln15' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 280 [1/1] (0.00ns)   --->   "%zext_ln486 = zext i11 %xs_exp" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:486->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 280 'zext' 'zext_ln486' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 281 [1/1] (2.12ns)   --->   "%add_ln486 = add i12 %zext_ln486, i12 3073" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:486->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 281 'add' 'add_ln486' <Predicate = true> <Delay = 2.12> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.12> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 282 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i12.i32, i12 %add_ln486, i32 11" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 282 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 283 [1/1] (2.12ns)   --->   "%sub_ln18 = sub i11 1023, i11 %xs_exp" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 283 'sub' 'sub_ln18' <Predicate = true> <Delay = 2.12> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.12> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 284 [1/1] (0.00ns)   --->   "%sext_ln18 = sext i11 %sub_ln18" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 284 'sext' 'sext_ln18' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 285 [1/1] (0.68ns)   --->   "%select_ln18 = select i1 %tmp, i12 %sext_ln18, i12 %add_ln486" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 285 'select' 'select_ln18' <Predicate = true> <Delay = 0.68> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_52 : Operation 286 [1/1] (0.00ns)   --->   "%sext_ln18_4 = sext i12 %select_ln18" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 286 'sext' 'sext_ln18_4' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 287 [1/1] (0.00ns)   --->   "%zext_ln18 = zext i32 %sext_ln18_4" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 287 'zext' 'zext_ln18' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 288 [1/1] (4.28ns)   --->   "%lshr_ln18 = lshr i137 %zext_ln15, i137 %zext_ln18" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 288 'lshr' 'lshr_ln18' <Predicate = true> <Delay = 4.28> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 4.28> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 289 [1/1] (4.28ns)   --->   "%shl_ln18 = shl i137 %zext_ln15, i137 %zext_ln18" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 289 'shl' 'shl_ln18' <Predicate = true> <Delay = 4.28> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 4.28> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 290 [1/1] (2.70ns)   --->   "%result_13 = sub i32 0, i32 %val_2" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 290 'sub' 'result_13' <Predicate = (xs_sign_2)> <Delay = 2.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 291 [1/1] (0.79ns)   --->   "%result_20 = select i1 %xs_sign_2, i32 %result_13, i32 %val_2" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 291 'select' 'result_20' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_52 : Operation 292 [1/1] (2.70ns)   --->   "%result_17 = sub i32 0, i32 %val_3" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 292 'sub' 'result_17' <Predicate = (xs_sign_3)> <Delay = 2.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 293 [1/1] (0.79ns)   --->   "%result_21 = select i1 %xs_sign_3, i32 %result_17, i32 %val_3" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893]   --->   Operation 293 'select' 'result_21' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_52 : Operation 294 [1/1] (0.00ns)   --->   "%trunc_ln3417 = trunc i27 %sdiv_ln3417" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 294 'trunc' 'trunc_ln3417' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 295 [1/1] (2.52ns)   --->   "%sub_ln3417 = sub i27 0, i27 %trunc_ln3417" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 295 'sub' 'sub_ln3417' <Predicate = (xs_sign_2)> <Delay = 2.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 296 [1/1] (0.00ns) (grouped into LUT with out node x_ratio)   --->   "%select_ln3417 = select i1 %xs_sign_2, i27 %sub_ln3417, i27 %trunc_ln3417" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 296 'select' 'select_ln3417' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_52 : Operation 297 [1/1] (0.00ns) (grouped into LUT with out node x_ratio)   --->   "%sext_ln3417 = sext i27 %select_ln3417" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 297 'sext' 'sext_ln3417' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 298 [1/1] (2.52ns) (out node of the LUT)   --->   "%x_ratio = add i28 %sext_ln3417, i28 1" [../source/haar.cpp:3417->../source/haar.cpp:2899]   --->   Operation 298 'add' 'x_ratio' <Predicate = true> <Delay = 2.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 299 [1/1] (0.00ns)   --->   "%trunc_ln3418 = trunc i24 %sdiv_ln3418" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 299 'trunc' 'trunc_ln3418' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 300 [1/1] (2.42ns)   --->   "%sub_ln3418 = sub i24 0, i24 %trunc_ln3418" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 300 'sub' 'sub_ln3418' <Predicate = (xs_sign_3)> <Delay = 2.42> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 301 [1/1] (0.00ns) (grouped into LUT with out node y_ratio)   --->   "%select_ln3418 = select i1 %xs_sign_3, i24 %sub_ln3418, i24 %trunc_ln3418" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 301 'select' 'select_ln3418' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_52 : Operation 302 [1/1] (2.42ns) (out node of the LUT)   --->   "%y_ratio = add i24 %select_ln3418, i24 1" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 302 'add' 'y_ratio' <Predicate = true> <Delay = 2.42> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.42> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 303 [2/2] (0.00ns)   --->   "%call_ln3418 = call void @detectFaces_Pipeline_imageScalerL1_imageScalerL1_1, i24 %y_ratio, i32 %result_21, i8 %IMG1_data, i32 %result_20, i28 %x_ratio, i8 %Data" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 303 'call' 'call_ln3418' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_52 : Operation 304 [1/1] (0.00ns)   --->   "%tmp_15 = partselect i32 @_ssdm_op_PartSelect.i32.i137.i32.i32, i137 %lshr_ln18, i32 53, i32 84" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:21->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 304 'partselect' 'tmp_15' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 305 [1/1] (0.00ns)   --->   "%tmp_16 = partselect i32 @_ssdm_op_PartSelect.i32.i137.i32.i32, i137 %shl_ln18, i32 53, i32 84" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:21->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 305 'partselect' 'tmp_16' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 306 [1/1] (0.00ns)   --->   "%xs_sign = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %data, i32 63" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:460->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:13->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 306 'bitselect' 'xs_sign' <Predicate = true> <Delay = 0.00>
+
+State 53 <SV = 52> <Delay = 4.29>
+ST_53 : Operation 307 [1/2] (0.00ns)   --->   "%call_ln3418 = call void @detectFaces_Pipeline_imageScalerL1_imageScalerL1_1, i24 %y_ratio, i32 %result_21, i8 %IMG1_data, i32 %result_20, i28 %x_ratio, i8 %Data" [../source/haar.cpp:3418->../source/haar.cpp:2899]   --->   Operation 307 'call' 'call_ln3418' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_53 : Operation 308 [1/1] (0.79ns)   --->   "%val = select i1 %tmp, i32 %tmp_15, i32 %tmp_16" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 308 'select' 'val' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_53 : Operation 309 [1/1] (2.70ns)   --->   "%result = sub i32 0, i32 %val" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 309 'sub' 'result' <Predicate = (xs_sign)> <Delay = 2.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 310 [1/1] (0.79ns)   --->   "%result_19 = select i1 %xs_sign, i32 %result, i32 %val" [/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889]   --->   Operation 310 'select' 'result_19' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 54 <SV = 53> <Delay = 6.86>
+ST_54 : Operation 311 [2/2] (6.86ns)   --->   "%res_size_Scale = call i32 @processImage, i32 %factor_2, i32 %result_21, i32 %result_20, i32 %result_x_Scale, i32 %result_y_Scale, i32 %result_w_Scale, i32 %result_h_Scale, i32 %res_size_Scale_0_load, i8 %IMG1_data, i32 %result_19, i8 %sqrts, i8 %stages_array, i14 %alpha2_array, i13 %tree_thresh_array, i13 %weights_array0, i14 %weights_array1, i14 %weights_array2, i5 %bank_mapping, i5 %offset_mapping, i5 %rectangles_array0, i5 %rectangles_array2, i5 %rectangles_array1, i5 %rectangles_array3, i5 %rectangles_array4, i5 %rectangles_array6, i5 %rectangles_array5, i5 %rectangles_array7, i5 %rectangles_array8, i4 %rectangles_array10, i5 %rectangles_array9, i4 %rectangles_array11, i14 %alpha1_array, i12 %stages_thresh_array" [../source/haar.cpp:2908]   --->   Operation 311 'call' 'res_size_Scale' <Predicate = true> <Delay = 6.86> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 55 <SV = 54> <Delay = 1.61>
+ST_55 : Operation 312 [1/1] (0.00ns)   --->   "%specloopname_ln2885 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8" [../source/haar.cpp:2885]   --->   Operation 312 'specloopname' 'specloopname_ln2885' <Predicate = true> <Delay = 0.00>
+ST_55 : Operation 313 [1/2] (0.00ns)   --->   "%res_size_Scale = call i32 @processImage, i32 %factor_2, i32 %result_21, i32 %result_20, i32 %result_x_Scale, i32 %result_y_Scale, i32 %result_w_Scale, i32 %result_h_Scale, i32 %res_size_Scale_0_load, i8 %IMG1_data, i32 %result_19, i8 %sqrts, i8 %stages_array, i14 %alpha2_array, i13 %tree_thresh_array, i13 %weights_array0, i14 %weights_array1, i14 %weights_array2, i5 %bank_mapping, i5 %offset_mapping, i5 %rectangles_array0, i5 %rectangles_array2, i5 %rectangles_array1, i5 %rectangles_array3, i5 %rectangles_array4, i5 %rectangles_array6, i5 %rectangles_array5, i5 %rectangles_array7, i5 %rectangles_array8, i4 %rectangles_array10, i5 %rectangles_array9, i4 %rectangles_array11, i14 %alpha1_array, i12 %stages_thresh_array" [../source/haar.cpp:2908]   --->   Operation 313 'call' 'res_size_Scale' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_55 : Operation 314 [1/1] (1.61ns)   --->   "%store_ln2908 = store i32 %res_size_Scale, i32 %res_size_Scale_0" [../source/haar.cpp:2908]   --->   Operation 314 'store' 'store_ln2908' <Predicate = true> <Delay = 1.61>
+ST_55 : Operation 315 [1/1] (0.00ns)   --->   "%br_ln2885 = br void %while.cond" [../source/haar.cpp:2885]   --->   Operation 315 'br' 'br_ln2885' <Predicate = true> <Delay = 0.00>
+
+State 56 <SV = 20> <Delay = 1.61>
+ST_56 : Operation 316 [1/2] (0.00ns)   --->   "%call_ln0 = call void @detectFaces_Pipeline_VITIS_LOOP_2922_3, i32 %result_x_Scale, i32 %result_x, i32 %result_y_Scale, i32 %result_y, i32 %result_w_Scale, i32 %result_w, i32 %result_h_Scale, i32 %result_h"   --->   Operation 316 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_56 : Operation 317 [1/1] (1.61ns)   --->   "%br_ln0 = br void %mergeST"   --->   Operation 317 'br' 'br_ln0' <Predicate = true> <Delay = 1.61>
+
+State 57 <SV = 2> <Delay = 1.61>
+ST_57 : Operation 318 [1/2] (0.00ns)   --->   "%call_ln0 = call void @detectFaces_Pipeline_VITIS_LOOP_2855_2, i32 %result_x, i32 %result_y, i32 %result_w, i32 %result_h"   --->   Operation 318 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_57 : Operation 319 [1/1] (1.61ns)   --->   "%br_ln0 = br void %mergeST"   --->   Operation 319 'br' 'br_ln0' <Predicate = true> <Delay = 1.61>
+
+State 58 <SV = 21> <Delay = 0.00>
+ST_58 : Operation 320 [1/1] (0.00ns)   --->   "%storemerge = phi i32 %res_size_Scale_0_load, void %for.inc69.preheader, i32 0, void %for.inc20.preheader"   --->   Operation 320 'phi' 'storemerge' <Predicate = true> <Delay = 0.00>
+ST_58 : Operation 321 [1/1] (0.00ns)   --->   "%write_ln2866 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %result_size, i32 %storemerge" [../source/haar.cpp:2866]   --->   Operation 321 'write' 'write_ln2866' <Predicate = true> <Delay = 0.00>
+ST_58 : Operation 322 [1/1] (0.00ns)   --->   "%ret_ln2929 = ret" [../source/haar.cpp:2929]   --->   Operation 322 'ret' 'ret_ln2929' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.404ns
+The critical path consists of the following:
+	'load' operation 32 bit ('counter_load', ../source/haar.cpp:2849) on static variable 'counter' [50]  (0.000 ns)
+	'add' operation 32 bit ('add_ln2853', ../source/haar.cpp:2853) [60]  (2.702 ns)
+	'icmp' operation 1 bit ('icmp_ln2854', ../source/haar.cpp:2854) [62]  (2.702 ns)
+
+ <State 2>: 1.610ns
+The critical path consists of the following:
+	'alloca' operation 32 bit ('res_size_Scale_0') [66]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'res_size_Scale_0' [67]  (1.610 ns)
+
+ <State 3>: 6.301ns
+The critical path consists of the following:
+	'load' operation 32 bit ('factor', ../source/haar.cpp:2919) on local variable 'factor', ../source/haar.cpp:2872 [71]  (0.000 ns)
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 4>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 5>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 6>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 7>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 8>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 9>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 10>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 11>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 12>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 13>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 14>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 15>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 16>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 17>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 18>: 6.301ns
+The critical path consists of the following:
+	'fdiv' operation 32 bit ('x', ../source/haar.cpp:2885) [73]  (6.301 ns)
+
+ <State 19>: 5.095ns
+The critical path consists of the following:
+	'fcmp' operation 1 bit ('tmp_25', ../source/haar.cpp:2885) [80]  (5.095 ns)
+
+ <State 20>: 7.287ns
+The critical path consists of the following:
+	'sub' operation 8 bit ('sub_ln18_2', /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893) [129]  (2.115 ns)
+	'select' operation 9 bit ('select_ln18_4', /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893) [131]  (1.084 ns)
+	'lshr' operation 79 bit ('lshr_ln18_2', /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51->../source/haar.cpp:2893) [134]  (4.088 ns)
+
+ <State 21>: 5.784ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('factor', ../source/haar.cpp:2919) [178]  (5.784 ns)
+
+ <State 22>: 5.784ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('factor', ../source/haar.cpp:2919) [178]  (5.784 ns)
+
+ <State 23>: 5.784ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('factor', ../source/haar.cpp:2919) [178]  (5.784 ns)
+
+ <State 24>: 4.148ns
+The critical path consists of the following:
+	'sdiv' operation 27 bit ('sdiv_ln3417', ../source/haar.cpp:3417->../source/haar.cpp:2899) [159]  (4.148 ns)
+
+ <State 25>: 4.148ns
+The critical path consists of the following:
+	'sdiv' operation 27 bit ('sdiv_ln3417', ../source/haar.cpp:3417->../source/haar.cpp:2899) [159]  (4.148 ns)
+
+ <State 26>: 4.148ns
+The critical path consists of the following:
+	'sdiv' operation 27 bit ('sdiv_ln3417', ../source/haar.cpp:3417->../source/haar.cpp:2899) [159]  (4.148 ns)
+
+ <State 27>: 4.148ns
+The critical path consists of the following:
+	'sdiv' operation 27 bit ('sdiv_ln3417', ../source/haar.cpp:3417->../source/haar.cpp:2899) [159]  (4.148 ns)
+
+ <State 28>: 4.148ns
+The critical path consists of the following:
+	'sdiv' operation 27 bit ('sdiv_ln3417', ../source/haar.cpp:3417->../source/haar.cpp:2899) [159]  (4.148 ns)
+
+ <State 29>: 4.148ns
+The critical path consists of the following:
+	'sdiv' operation 27 bit ('sdiv_ln3417', ../source/haar.cpp:3417->../source/haar.cpp:2899) [159]  (4.148 ns)
+
+ <State 30>: 4.148ns
+The critical path consists of the following:
+	'sdiv' operation 27 bit ('sdiv_ln3417', ../source/haar.cpp:3417->../source/haar.cpp:2899) [159]  (4.148 ns)
+
+ <State 31>: 4.148ns
+The critical path consists of the following:
+	'sdiv' operation 27 bit ('sdiv_ln3417', ../source/haar.cpp:3417->../source/haar.cpp:2899) [159]  (4.148 ns)
+
+ <State 32>: 4.148ns
+The critical path consists of the following:
+	'sdiv' operation 27 bit ('sdiv_ln3417', ../source/haar.cpp:3417->../source/haar.cpp:2899) [159]  (4.148 ns)
+
+ <State 33>: 4.148ns
+The critical path consists of the following:
+	'sdiv' operation 27 bit ('sdiv_ln3417', ../source/haar.cpp:3417->../source/haar.cpp:2899) [159]  (4.148 ns)
+
+ <State 34>: 4.148ns
+The critical path consists of the following:
+	'sdiv' operation 27 bit ('sdiv_ln3417', ../source/haar.cpp:3417->../source/haar.cpp:2899) [159]  (4.148 ns)
+
+ <State 35>: 4.148ns
+The critical path consists of the following:
+	'sdiv' operation 27 bit ('sdiv_ln3417', ../source/haar.cpp:3417->../source/haar.cpp:2899) [159]  (4.148 ns)
+
+ <State 36>: 4.148ns
+The critical path consists of the following:
+	'sdiv' operation 27 bit ('sdiv_ln3417', ../source/haar.cpp:3417->../source/haar.cpp:2899) [159]  (4.148 ns)
+
+ <State 37>: 4.148ns
+The critical path consists of the following:
+	'sdiv' operation 27 bit ('sdiv_ln3417', ../source/haar.cpp:3417->../source/haar.cpp:2899) [159]  (4.148 ns)
+
+ <State 38>: 5.784ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('value', ../source/haar.cpp:2889) [96]  (5.784 ns)
+
+ <State 39>: 5.784ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('value', ../source/haar.cpp:2889) [96]  (5.784 ns)
+
+ <State 40>: 5.784ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('value', ../source/haar.cpp:2889) [96]  (5.784 ns)
+
+ <State 41>: 5.784ns
+The critical path consists of the following:
+	'fmul' operation 32 bit ('value', ../source/haar.cpp:2889) [96]  (5.784 ns)
+
+ <State 42>: 5.095ns
+The critical path consists of the following:
+	'fcmp' operation 1 bit ('tmp_29', ../source/haar.cpp:2815->../source/haar.cpp:2889) [104]  (5.095 ns)
+
+ <State 43>: 5.095ns
+The critical path consists of the following:
+	'fcmp' operation 1 bit ('tmp_29', ../source/haar.cpp:2815->../source/haar.cpp:2889) [104]  (5.095 ns)
+
+ <State 44>: 6.637ns
+The critical path consists of the following:
+	'or' operation 1 bit ('or_ln2815', ../source/haar.cpp:2815->../source/haar.cpp:2889) [103]  (0.000 ns)
+	'and' operation 1 bit ('and_ln2815', ../source/haar.cpp:2815->../source/haar.cpp:2889) [105]  (0.000 ns)
+	'select' operation 64 bit ('select_ln2815', ../source/haar.cpp:2815->../source/haar.cpp:2889) [106]  (0.987 ns)
+	'dadd' operation 64 bit ('x', ../source/haar.cpp:2815->../source/haar.cpp:2889) [107]  (5.650 ns)
+
+ <State 45>: 5.650ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('x', ../source/haar.cpp:2815->../source/haar.cpp:2889) [107]  (5.650 ns)
+
+ <State 46>: 5.650ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('x', ../source/haar.cpp:2815->../source/haar.cpp:2889) [107]  (5.650 ns)
+
+ <State 47>: 5.650ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('x', ../source/haar.cpp:2815->../source/haar.cpp:2889) [107]  (5.650 ns)
+
+ <State 48>: 5.650ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('x', ../source/haar.cpp:2815->../source/haar.cpp:2889) [107]  (5.650 ns)
+
+ <State 49>: 5.650ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('x', ../source/haar.cpp:2815->../source/haar.cpp:2889) [107]  (5.650 ns)
+
+ <State 50>: 5.650ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('x', ../source/haar.cpp:2815->../source/haar.cpp:2889) [107]  (5.650 ns)
+
+ <State 51>: 5.650ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('x', ../source/haar.cpp:2815->../source/haar.cpp:2889) [107]  (5.650 ns)
+
+ <State 52>: 7.095ns
+The critical path consists of the following:
+	'add' operation 12 bit ('add_ln486', /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:486->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889) [114]  (2.127 ns)
+	'select' operation 12 bit ('select_ln18', /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889) [118]  (0.682 ns)
+	'lshr' operation 137 bit ('lshr_ln18', /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889) [121]  (4.286 ns)
+
+ <State 53>: 4.294ns
+The critical path consists of the following:
+	'select' operation 32 bit ('val', /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889) [173]  (0.796 ns)
+	'sub' operation 32 bit ('result', /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889) [174]  (2.702 ns)
+	'select' operation 32 bit ('result_19', /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117->/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55->../source/haar.cpp:2815->../source/haar.cpp:2889) [176]  (0.796 ns)
+
+ <State 54>: 6.860ns
+The critical path consists of the following:
+	'call' operation 32 bit ('res_size_Scale', ../source/haar.cpp:2908) to 'processImage' [177]  (6.860 ns)
+
+ <State 55>: 1.610ns
+The critical path consists of the following:
+	'call' operation 32 bit ('res_size_Scale', ../source/haar.cpp:2908) to 'processImage' [177]  (0.000 ns)
+	'store' operation 0 bit ('store_ln2908', ../source/haar.cpp:2908) of variable 'res_size_Scale', ../source/haar.cpp:2908 on local variable 'res_size_Scale_0' [179]  (1.610 ns)
+
+ <State 56>: 1.610ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation 32 bit ('storemerge') with incoming values : ('res_size_Scale_0_load') [189]  (1.610 ns)
+
+ <State 57>: 1.610ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation 32 bit ('storemerge') with incoming values : ('res_size_Scale_0_load') [189]  (1.610 ns)
+
+ <State 58>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

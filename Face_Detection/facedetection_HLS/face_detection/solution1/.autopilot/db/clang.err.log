@@ -1,0 +1,4 @@
+../source/haar.cpp:950:23: warning: 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, use 'Stable Pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS interface ap_stable port=aa
+                      ^
+1 warning generated.

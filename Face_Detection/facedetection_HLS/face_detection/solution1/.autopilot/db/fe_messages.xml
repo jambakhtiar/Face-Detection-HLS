@@ -1,0 +1,670 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="../source/haar.cpp:950:23" msg_body="'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, use 'Stable Pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="../source/haar.cpp:3105:11" msg_body="unused parameter 'pt'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="../source/haar.cpp:3366:7" msg_body="unused parameter 'w_id'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:949:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_all_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:950:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_all_data" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_stable port=aa" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:954:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_all_data" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=bank complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:956:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_all_data" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=offset complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:958:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_all_data" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=offset_for_banks complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:960:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_all_data" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=data_from_banks complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:965:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_all_data" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:973:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_all_data" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1023:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_all_data" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1032:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="use_data" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1052:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier0" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1085:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1118:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier2" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1151:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier3" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1184:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier4" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1217:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier5" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1250:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier6" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1283:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier7" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1316:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier8" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1349:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier9" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1382:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier10" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1415:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier11" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1448:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier12" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1481:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier13" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1514:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier14" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1547:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier15" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1580:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier16" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1613:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier17" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1646:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier18" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1679:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier19" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1712:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier20" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1745:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier21" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1778:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier22" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1811:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier23" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1844:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier24" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1877:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier25" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1910:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier26" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1943:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier27" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:1976:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier28" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2009:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier29" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2042:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier30" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2075:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier31" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2108:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier32" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2141:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier33" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2174:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier34" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2207:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier35" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2240:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier36" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2273:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier37" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2306:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier38" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2339:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier39" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2372:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier40" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2405:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier41" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2438:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier42" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2471:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier43" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2504:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier44" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2537:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier45" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2570:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier46" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2603:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier47" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2636:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier48" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2669:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier49" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2702:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier50" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2735:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="classifier51" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/jam/Downloads/FaceDetection/Face_Detection/facedetection_HLS/face_detection/solution1/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="detectFaces" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=detectFaces" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2946:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2956:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=L complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2960:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=I complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2964:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=II complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2968:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=SI complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2972:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=SII complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2977:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2980:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2993:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:2996:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3005:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3024:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3026:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3039:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3041:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3054:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3063:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="processImage" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3111:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cascadeClassifier" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3126:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cascadeClassifier" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coord complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3129:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cascadeClassifier" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s0 complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3132:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cascadeClassifier" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s1 complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3135:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cascadeClassifier" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=s2 complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3141:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cascadeClassifier" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=values complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3145:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cascadeClassifier" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=addr_list complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3149:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cascadeClassifier" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=enable_list complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3152:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cascadeClassifier" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=_II complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3155:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cascadeClassifier" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3157:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cascadeClassifier" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3278:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cascadeClassifier" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3372:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="weakClassifier" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../source/haar.cpp:3422:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="imageScaler" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../source/haar.cpp:3344:11" msg_body="Inlining function 'weakClassifier(int, ap_uint&lt;18&gt;*, int, int)' into 'cascadeClassifier(MyPoint, ap_uint&lt;18&gt; (*) [25], ap_uint&lt;26&gt; (*) [2])'">
+        <args Callee="weakClassifier(int, ap_uint&lt;18&gt;*, int, int)" Callee-DebugLoc="File ../source/haar.cpp Line 3368 Column 0" Caller="cascadeClassifier(MyPoint, ap_uint&lt;18&gt; (*) [25], ap_uint&lt;26&gt; (*) [2])" Caller-DebugLoc="File ../source/haar.cpp Line 3110 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../source/haar.cpp:3335:7" msg_body="Inlining function 'get_all_data(ap_uint&lt;18&gt;*, ap_uint&lt;10&gt;*, ap_uint&lt;18&gt;*)' into 'cascadeClassifier(MyPoint, ap_uint&lt;18&gt; (*) [25], ap_uint&lt;26&gt; (*) [2])'">
+        <args Callee="get_all_data(ap_uint&lt;18&gt;*, ap_uint&lt;10&gt;*, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 947 Column 0" Caller="cascadeClassifier(MyPoint, ap_uint&lt;18&gt; (*) [25], ap_uint&lt;26&gt; (*) [2])" Caller-DebugLoc="File ../source/haar.cpp Line 3110 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../source/haar.cpp:3077:22" msg_body="Inlining function 'cascadeClassifier(MyPoint, ap_uint&lt;18&gt; (*) [25], ap_uint&lt;26&gt; (*) [2])' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="cascadeClassifier(MyPoint, ap_uint&lt;18&gt; (*) [25], ap_uint&lt;26&gt; (*) [2])" Callee-DebugLoc="File ../source/haar.cpp Line 3110 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../source/haar.cpp:963:3" msg_body="Loop 'COMPUTE_BANK_AND_OFFSET' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="COMPUTE_BANK_AND_OFFSET"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../source/haar.cpp:971:3" msg_body="Loop 'ASSIGN_OFFSET_FOR_BANKS' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="ASSIGN_OFFSET_FOR_BANKS"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../source/haar.cpp:1021:3" msg_body="Loop 'CHOOSE_DATA' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="CHOOSE_DATA"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../source/haar.cpp:3337:26" msg_body="Loop 'VITIS_LOOP_3337_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_3337_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'SetIIu' (../source/haar.cpp:3023:15) in function 'processImage' completely with a factor of 25">
+        <args Factor="25" LoopLoc="../source/haar.cpp:3023:15" LoopName="SetIIu"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'SetIIj' (../source/haar.cpp:3025:10) in function 'processImage' completely with a factor of 25">
+        <args Factor="25" LoopLoc="../source/haar.cpp:3025:10" LoopName="SetIIj"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'SetIj' (../source/haar.cpp:3038:14) in function 'processImage' completely with a factor of 49">
+        <args Factor="49" LoopLoc="../source/haar.cpp:3038:14" LoopName="SetIj"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'SetIi' (../source/haar.cpp:3040:9) in function 'processImage' completely with a factor of 25">
+        <args Factor="25" LoopLoc="../source/haar.cpp:3040:9" LoopName="SetIi"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'Ilast' (../source/haar.cpp:3053:14) in function 'processImage' completely with a factor of 24">
+        <args Factor="24" LoopLoc="../source/haar.cpp:3053:14" LoopName="Ilast"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'LineBuf' (../source/haar.cpp:3062:16) in function 'processImage' completely with a factor of 23">
+        <args Factor="23" LoopLoc="../source/haar.cpp:3062:16" LoopName="LineBuf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'COPY_LOOP1' (../source/haar.cpp:3154:14) in function 'processImage' completely with a factor of 25">
+        <args Factor="25" LoopLoc="../source/haar.cpp:3154:14" LoopName="COPY_LOOP1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'COPY_LOOP2' (../source/haar.cpp:3156:14) in function 'processImage' completely with a factor of 25">
+        <args Factor="25" LoopLoc="../source/haar.cpp:3156:14" LoopName="COPY_LOOP2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'COMPUTE_BANK_AND_OFFSET' (../source/haar.cpp:963:3) in function 'processImage' completely with a factor of 12">
+        <args Factor="12" LoopLoc="../source/haar.cpp:963:3" LoopName="COMPUTE_BANK_AND_OFFSET"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'ASSIGN_OFFSET_FOR_BANKS' (../source/haar.cpp:971:3) in function 'processImage' completely with a factor of 28">
+        <args Factor="28" LoopLoc="../source/haar.cpp:971:3" LoopName="ASSIGN_OFFSET_FOR_BANKS"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'CHOOSE_DATA' (../source/haar.cpp:1021:3) in function 'processImage' completely with a factor of 12">
+        <args Factor="12" LoopLoc="../source/haar.cpp:1021:3" LoopName="CHOOSE_DATA"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'VITIS_LOOP_3337_1' (../source/haar.cpp:3337:26) in function 'processImage' completely with a factor of 12">
+        <args Factor="12" LoopLoc="../source/haar.cpp:3337:26" LoopName="VITIS_LOOP_3337_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'Initialize2y' (../source/haar.cpp:3004:3) in function 'processImage' completely with a factor of 24">
+        <args Factor="24" LoopLoc="../source/haar.cpp:3004:3" LoopName="Initialize2y"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'Initialize1i' (../source/haar.cpp:2992:3) in function 'processImage' completely with a factor of 25">
+        <args Factor="25" LoopLoc="../source/haar.cpp:2992:3" LoopName="Initialize1i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'Initialize1j' (../source/haar.cpp:2995:5) in function 'processImage' completely with a factor of 50">
+        <args Factor="50" LoopLoc="../source/haar.cpp:2995:5" LoopName="Initialize1j"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'Initialize0u' (../source/haar.cpp:2976:3) in function 'processImage' completely with a factor of 25">
+        <args Factor="25" LoopLoc="../source/haar.cpp:2976:3" LoopName="Initialize0u"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Unrolling loop 'Initailize0v' (../source/haar.cpp:2979:5) in function 'processImage' completely with a factor of 25">
+        <args Factor="25" LoopLoc="../source/haar.cpp:2979:5" LoopName="Initailize0v"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::fp_struct(double)' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;double&gt;::fp_struct(double)" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 456 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::mantissa() const' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;double&gt;::mantissa() const" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 503 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::expv() const' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;double&gt;::expv() const" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 485 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;double&gt;::__signbit() const' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;double&gt;::__signbit() const" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 512 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0" msg_body="Inlining function 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)' into 'int generic_cast_IEEE754&lt;int, double&gt;(double, bool)'">
+        <args Callee="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, double&gt;(double, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0" Caller="int generic_cast_IEEE754&lt;int, double&gt;(double, bool)" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 116 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55:0" msg_body="Inlining function 'int generic_cast_IEEE754&lt;int, double&gt;(double, bool)' into '__hls_fptosi_double_i32'">
+        <args Callee="int generic_cast_IEEE754&lt;int, double&gt;(double, bool)" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 116 Column 0" Caller="__hls_fptosi_double_i32" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp Line 55 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2814:0" msg_body="Inlining function '__hls_fptosi_double_i32' into 'myRound(float)'">
+        <args Callee="__hls_fptosi_double_i32" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp Line 55 Column 0" Caller="myRound(float)" Caller-DebugLoc="File ../source/haar.cpp Line 2814 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::fp_struct(float)' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;float&gt;::fp_struct(float)" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 283 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::mantissa() const' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;float&gt;::mantissa() const" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 340 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::expv() const' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;float&gt;::expv() const" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 316 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::__signbit() const' into 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)'">
+        <args Callee="fp_struct&lt;float&gt;::__signbit() const" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h Line 349 Column 0" Caller="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0" msg_body="Inlining function 'int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)' into 'int generic_cast_IEEE754&lt;int, float&gt;(float, bool)'">
+        <args Callee="int generic_cast_IEEE754&lt;int, (ap_q_mode)6, float&gt;(float, bool, hls::enable_if&lt;std::numeric_limits&lt;int&gt;::is_signed, bool&gt;::type)" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 12 Column 0" Caller="int generic_cast_IEEE754&lt;int, float&gt;(float, bool)" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 116 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0" msg_body="Inlining function 'int generic_cast_IEEE754&lt;int, float&gt;(float, bool)' into '__hls_fptosi_float_i32'">
+        <args Callee="int generic_cast_IEEE754&lt;int, float&gt;(float, bool)" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h Line 116 Column 0" Caller="__hls_fptosi_float_i32" Caller-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp Line 51 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'int_sqrt(ap_uint&lt;32&gt;)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="int_sqrt(ap_uint&lt;32&gt;)" Callee-DebugLoc="File ../source/haar.cpp Line 3429 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier0(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier0(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1050 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier1(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier1(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1083 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier2(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier2(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1116 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier3(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier3(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1149 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier4(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier4(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1182 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier5(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier5(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1215 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier6(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier6(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1248 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier7(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier7(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1281 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier8(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier8(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1314 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier9(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier9(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1347 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier10(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier10(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1380 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier11(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier11(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1413 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier12(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier12(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1446 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier13(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier13(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1479 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier14(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier14(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1512 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier15(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier15(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1545 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier16(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier16(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1578 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier17(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier17(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1611 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier18(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier18(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1644 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier19(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier19(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1677 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier20(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier20(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1710 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier21(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier21(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1743 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier22(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier22(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1776 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier23(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier23(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1809 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier24(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier24(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1842 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier25(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier25(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1875 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier26(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier26(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1908 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier27(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier27(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1941 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier28(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier28(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 1974 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier29(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier29(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2007 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier30(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier30(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2040 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier31(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier31(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2073 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier32(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier32(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2106 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier33(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier33(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2139 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier34(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier34(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2172 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier35(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier35(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2205 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier36(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier36(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2238 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier37(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier37(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2271 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier38(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier38(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2304 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier39(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier39(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2337 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier40(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier40(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2370 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier41(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier41(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2403 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier42(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier42(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2436 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier43(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier43(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2469 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier44(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier44(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2502 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier45(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier45(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2535 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier46(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier46(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2568 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier47(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier47(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2601 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier48(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier48(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2634 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier49(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier49(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2667 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier50(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier50(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2700 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'classifier51(ap_uint&lt;18&gt; (*) [25], int)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="classifier51(ap_uint&lt;18&gt; (*) [25], int)" Callee-DebugLoc="File ../source/haar.cpp Line 2733 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_bank(ap_uint&lt;10&gt;)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_bank(ap_uint&lt;10&gt;)" Callee-DebugLoc="File ../source/haar.cpp Line 31 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_offset(ap_uint&lt;10&gt;)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_offset(ap_uint&lt;10&gt;)" Callee-DebugLoc="File ../source/haar.cpp Line 36 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'myRound(float)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="myRound(float)" Callee-DebugLoc="File ../source/haar.cpp Line 2814 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data0(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data0(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 41 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data4(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data4(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 185 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data6(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data6(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 254 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data7(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data7(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 287 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data8(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data8(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 321 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data10(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data10(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 369 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data13(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data13(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 471 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data14(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data14(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 504 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data16(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data16(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 572 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data17(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data17(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 605 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data19(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data19(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 674 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data21(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data21(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 742 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data22(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data22(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 771 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data23(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data23(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 805 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data24(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data24(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 835 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data25(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data25(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 866 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data26(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data26(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 896 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2944:0" msg_body="Inlining function 'get_data27(int, ap_uint&lt;18&gt;*)' into 'processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)'">
+        <args Callee="get_data27(int, ap_uint&lt;18&gt;*)" Callee-DebugLoc="File ../source/haar.cpp Line 923 Column 0" Caller="processImage(float, int, int, int*, int*, int*, int*, int*, unsigned char (*) [320], MySize)" Caller-DebugLoc="File ../source/haar.cpp Line 2944 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2832:0" msg_body="Inlining function 'myRound(float)' into 'detectFaces'">
+        <args Callee="myRound(float)" Callee-DebugLoc="File ../source/haar.cpp Line 2814 Column 0" Caller="detectFaces" Caller-DebugLoc="File ../source/haar.cpp Line 2832 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2832:0" msg_body="Inlining function '__hls_fptosi_float_i32' into 'detectFaces'">
+        <args Callee="__hls_fptosi_float_i32" Callee-DebugLoc="File /wrk/ci/prod/2023.2/hls_product/continuous/689/2023.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp Line 51 Column 0" Caller="detectFaces" Caller-DebugLoc="File ../source/haar.cpp Line 2832 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../source/haar.cpp:2832:0" msg_body="Inlining function 'imageScaler(int, int, unsigned char (*) [320], int, int, unsigned char (*) [320])' into 'detectFaces'">
+        <args Callee="imageScaler(int, int, unsigned char (*) [320], int, int, unsigned char (*) [320])" Callee-DebugLoc="File ../source/haar.cpp Line 3404 Column 0" Caller="detectFaces" Caller-DebugLoc="File ../source/haar.cpp Line 2832 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../source/haar.cpp:3125:0" msg_body="Applying array_partition to '_ZZ17cascadeClassifier7MyPointPA25_7ap_uintILi18EEPA2_S0_ILi26EEE5coord': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ17cascadeClassifier7MyPointPA25_7ap_uintILi18EEPA2_S0_ILi26EEE5coord"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../source/haar.cpp:2971:0" msg_body="Applying array_partition to '_ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE3SII': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="_ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE3SII"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../source/haar.cpp:2967:0" msg_body="Applying array_partition to '_ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE2SI': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="_ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE2SI"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../source/haar.cpp:2963:0" msg_body="Applying array_partition to '_ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE2II': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="_ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE2II"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../source/haar.cpp:2959:0" msg_body="Applying array_partition to '_ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE1I': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="_ZZ12processImagefiiPiS_S_S_S_PA320_h6MySizeE1I"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../source/haar.cpp:959:11" msg_body="Applying array_partition to 'data_from_banks.i.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="data_from_banks.i.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../source/haar.cpp:3140:11" msg_body="Applying array_partition to 'values.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="values.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../source/haar.cpp:3144:11" msg_body="Applying array_partition to 'addr_list.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="addr_list.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../source/haar.cpp:3148:6" msg_body="Applying array_partition to 'enable_list.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="enable_list.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../source/haar.cpp:3151:11" msg_body="Applying array_partition to '_II.i': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_II.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../source/haar.cpp:2955:17" msg_body="Applying array_partition to 'L': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="L"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="../source/haar.cpp:1025:14" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
+</xilinx:hls_fe_msgs>
+

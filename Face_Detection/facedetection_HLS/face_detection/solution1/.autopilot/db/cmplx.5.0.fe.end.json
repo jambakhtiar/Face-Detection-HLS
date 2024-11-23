@@ -1,0 +1,570 @@
+{
+    "1": {
+        "name": "processImage_Pipeline_Initialize2x16",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "processImage_Pipeline_Initialize2x23",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "processImage_Pipeline_Initialize2x9",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "processImage_Pipeline_Initialize2x8",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "processImage_Pipeline_Initialize2x5",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "processImage_Pipeline_Initialize2x18",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "processImage_Pipeline_Initialize2x3",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "processImage_Pipeline_Initialize2x15",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "detectFaces_Pipeline_imageScalerL1_imageScalerL1_1",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2899",
+        "instructions": "65",
+        "total_instructions": "65",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "G": "1",
+            "L": "3"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "processImage_Pipeline_Initialize2x20",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "detectFaces_Pipeline_VITIS_LOOP_2855_2",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2834",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2",
+            "T": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "processImage_Pipeline_Initialize2x14",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "processImage_Pipeline_Initialize2x21",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "detectFaces",
+        "file": "haar.cpp",
+        "fileloc": "2822",
+        "instructions": "153",
+        "total_instructions": "16479",
+        "calls": "28 11 17 9 22",
+        "basicblocks": "8",
+        "loads": {
+            "G": "1",
+            "L": "2"
+        },
+        "stores": {
+            "G": "1",
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "processImage_Pipeline_Initialize2x6",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "processImage_Pipeline_Initialize2x",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "16": {
+        "name": "processImage_Pipeline_Filters",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "3077",
+        "instructions": "2024",
+        "total_instructions": "2024",
+        "calls": "",
+        "basicblocks": "726",
+        "loads": {
+            "G": "42",
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "17": {
+        "name": "detectFaces_Pipeline_VITIS_LOOP_2922_3",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2834",
+        "instructions": "34",
+        "total_instructions": "34",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "2",
+            "T": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "18": {
+        "name": "processImage_Pipeline_Initialize2x17",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "processImage_Pipeline_Initialize2x12",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "20": {
+        "name": "processImage_Pipeline_Initialize2x11",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "21": {
+        "name": "processImage_Pipeline_Initialize2x22",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "22": {
+        "name": "processImage",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "13770",
+        "total_instructions": "16178",
+        "calls": "15 24 7 27 5 14 23 4 3 26 20 19 29 12 8 1 18 6 30 10 13 21 2 25 16",
+        "basicblocks": "16",
+        "loads": {
+            "G": "4",
+            "L": "2626"
+        },
+        "stores": {
+            "L": "4600"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    },
+    "23": {
+        "name": "processImage_Pipeline_Initialize2x7",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "24": {
+        "name": "processImage_Pipeline_Initialize2x2",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "25": {
+        "name": "processImage_Pipeline_Initialize2x24",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "26": {
+        "name": "processImage_Pipeline_Initialize2x10",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "27": {
+        "name": "processImage_Pipeline_Initialize2x4",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "28": {
+        "name": "detectFaces_Pipeline_VITIS_LOOP_2850_1",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2834",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1",
+            "T": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "29": {
+        "name": "processImage_Pipeline_Initialize2x13",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "30": {
+        "name": "processImage_Pipeline_Initialize2x19",
+        "file": "..\/source\/haar.cpp",
+        "fileloc": "2952",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}
